@@ -1,0 +1,1374 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ôn giữa kỳ Tiếng Anh 6</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700;800&family=Noto+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: sổ tay học sinh. Thanh tab dính phía trên, nội dung là các "trang vở" trên nền giấy lạnh, lề đỏ đánh dấu tiêu đề. */
+:root{
+  --bg:#f5f8fd; --paper:#ffffff; --ink:#18244a; --muted:#53608a; --line:#d8e0f0;
+  --accent:#2346c8; --accent-ink:#ffffff; --accent-soft:#e5ebfc;
+  --margin:#d63a56; --hl:#ffe46b; --on-hl:#18244a;
+  --good:#10784a; --good-bg:#e0f4ea; --bad:#b52a28; --bad-bg:#fcebea; --warn:#855800; --warn-bg:#fff2cf;
+  --shadow:0 1px 0 rgba(24,36,74,.05),0 10px 24px -14px rgba(24,36,74,.35);
+  --f-display:'Baloo 2','Nunito',system-ui,sans-serif;
+  --f-body:'Nunito',system-ui,'Segoe UI',sans-serif;
+  --f-ipa:'Noto Sans','Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1b25; --paper:#162a38; --ink:#e9f0f6; --muted:#9db0c0; --line:#2a4254;
+    --accent:#8db2ff; --accent-ink:#0c1a2c; --accent-soft:#1d3550;
+    --margin:#ff7b90; --hl:#f2d84c; --on-hl:#18244a;
+    --good:#5fd8a3; --good-bg:#12372a; --bad:#ff8b85; --bad-bg:#40201f; --warn:#f3c456; --warn-bg:#3a3013;
+    --shadow:0 1px 0 rgba(0,0,0,.3),0 10px 24px -14px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1b25; --paper:#162a38; --ink:#e9f0f6; --muted:#9db0c0; --line:#2a4254;
+  --accent:#8db2ff; --accent-ink:#0c1a2c; --accent-soft:#1d3550;
+  --margin:#ff7b90; --hl:#f2d84c; --on-hl:#18244a;
+  --good:#5fd8a3; --good-bg:#12372a; --bad:#ff8b85; --bad-bg:#40201f; --warn:#f3c456; --warn-bg:#3a3013;
+  --shadow:0 1px 0 rgba(0,0,0,.3),0 10px 24px -14px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.65;padding-bottom:56px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.2;margin:0;text-wrap:balance;font-weight:700}
+p{margin:0 0 .8em}
+a{color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+mark{background:var(--hl);color:var(--on-hl);padding:0 .25em;border-radius:3px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:2px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:10px 18px;flex-wrap:wrap;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand-mark{font-family:var(--f-display);font-weight:700;background:var(--margin);color:#fff;border-radius:8px;padding:2px 9px;font-size:18px;letter-spacing:.02em}
+.brand b{display:block;font-family:var(--f-display);font-size:17px;line-height:1.1}
+.brand small{display:block;color:var(--muted);font-size:12.5px}
+.tabs{display:flex;gap:6px;max-width:100%}
+.tabs a{text-decoration:none;color:var(--ink);font-weight:800;font-size:14.5px;padding:7px 13px;border-radius:999px;border:2px solid transparent;white-space:nowrap}
+.tabs a:hover{background:var(--accent-soft)}
+.tabs a[aria-current="page"]{background:var(--accent);color:var(--accent-ink)}
+
+main{padding-block:22px}
+.pane>*+*{margin-top:18px}
+.card{background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);min-width:0}
+h2.sec{border-left:5px solid var(--margin);padding-left:12px;font-size:25px}
+h3{font-size:20px}
+h4{font-size:17px;margin:16px 0 6px;color:var(--accent)}
+.sub{color:var(--muted);margin:4px 0 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{border:2px solid var(--accent);background:var(--accent);color:var(--accent-ink);font-weight:800;border-radius:10px;padding:8px 16px;cursor:pointer;min-height:42px}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.small{padding:4px 11px;min-height:34px;font-size:14px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.chip{border:2px solid var(--line);background:var(--paper);border-radius:999px;padding:5px 13px;font-weight:700;font-size:14px;cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tbl{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border:1.5px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft);font-family:var(--f-display);font-weight:600}
+td.n,th.n{text-align:center;white-space:nowrap}
+
+/* start */
+.hero{padding:26px 22px;background:var(--paper);border:1.5px solid var(--line);border-left:7px solid var(--margin);border-radius:14px;box-shadow:var(--shadow)}
+.hero h1{font-size:clamp(28px,6vw,42px)}
+.hero p{max-width:60ch;margin-top:8px;font-size:17px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.step{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);cursor:pointer;text-align:left}
+.step:hover{border-color:var(--accent)}
+.step b{font-family:var(--f-display);font-size:20px}
+.step span{color:var(--muted);font-size:15px}
+.step .big{font-family:var(--f-display);font-size:34px;font-weight:700;color:var(--accent);line-height:1}
+.plan{margin:0;padding-left:22px}
+.plan li{margin:6px 0}
+
+/* vocab */
+.filters{display:flex;flex-direction:column;gap:10px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.vcard{display:flex;flex-direction:column;gap:6px;min-width:0}
+.tile{position:relative;height:212px;perspective:900px;cursor:pointer;border-radius:14px}
+.tile-in{position:absolute;inset:0;transition:transform .45s;transform-style:preserve-3d}
+.tile.flipped .tile-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:14px;border:1.5px solid var(--line);background:var(--paper);box-shadow:var(--shadow);padding:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:4px;overflow:auto}
+.face.back{transform:rotateY(180deg);background:var(--accent-soft);justify-content:flex-start;padding-top:12px}
+.tile.known .face.front{border-color:var(--good)}
+.en{font-family:var(--f-display);font-size:26px;font-weight:700;line-height:1.15;word-break:break-word}
+.ipa{font-family:var(--f-ipa);color:var(--muted);font-size:15px}
+.pos{font-size:12px;font-weight:800;color:var(--margin);text-transform:uppercase;letter-spacing:.08em}
+.hint{font-size:12.5px;color:var(--muted)}
+.vi{font-family:var(--f-display);font-size:21px;font-weight:600;line-height:1.2}
+.exen{font-size:14.5px;font-style:italic}
+.exvi{font-size:13.5px;color:var(--muted)}
+.vtools{display:flex;gap:6px}
+.vtools .btn{flex:1}
+.vtools .btn.on{background:var(--good-bg);border-color:var(--good);color:var(--good)}
+.topic{font-size:19px;margin:22px 0 10px;display:flex;align-items:center;gap:8px}
+.topic::after{content:"";flex:1;height:2px;background:var(--line)}
+.qz-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:14px}
+.qz-opt{text-align:left;border:2px solid var(--line);background:var(--paper);border-radius:12px;padding:12px 14px;font-weight:700;cursor:pointer;min-height:48px}
+.qz-opt:hover:not([disabled]){border-color:var(--accent)}
+.qz-opt.ok{border-color:var(--good);background:var(--good-bg);color:var(--good)}
+.qz-opt.no{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}
+.bar{height:10px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+
+/* grammar */
+.gwrap{display:grid;grid-template-columns:240px minmax(0,1fr);gap:18px;align-items:start}
+.gnav{display:flex;flex-direction:column;gap:6px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 86px)}
+.gnav button{text-align:left;border:2px solid var(--line);background:var(--paper);border-radius:10px;padding:8px 12px;font-weight:700;cursor:pointer;line-height:1.3}
+.gnav button small{display:block;font-weight:600;color:var(--muted);font-size:12px}
+.gnav button[aria-current="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.gart h3{font-size:26px}
+.lead{font-size:17px;margin-top:8px}
+.rule{background:var(--accent-soft);border-left:5px solid var(--accent);border-radius:8px;padding:10px 14px;margin:10px 0}
+.rule b.f{font-family:var(--f-display);font-size:18px}
+.tip{background:var(--warn-bg);border-left:5px solid var(--warn);border-radius:8px;padding:10px 14px;margin:10px 0}
+.warn{background:var(--bad-bg);border-left:5px solid var(--bad);border-radius:8px;padding:10px 14px;margin:10px 0}
+.ok{color:var(--good);font-weight:800}
+.no{color:var(--bad);font-weight:800}
+.exs{margin:6px 0;padding-left:20px}
+.exs li{margin:3px 0}
+.scenes{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:10px 0}
+.scenes figure{margin:0;border:1.5px solid var(--line);border-radius:10px;padding:6px;background:var(--paper);text-align:center}
+.scenes svg{width:100%;height:auto;display:block}
+.scenes figcaption{font-size:14px;line-height:1.3}
+.sp{border:1.5px solid var(--line);background:var(--paper);border-radius:8px;padding:2px 10px;font-weight:700;cursor:pointer;margin:2px;font-family:var(--f-body)}
+.sp:hover{border-color:var(--accent)}
+.sp i{font-style:normal;font-family:var(--f-ipa);color:var(--muted);font-weight:400;font-size:13px;margin-left:4px}
+.nextprev{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+/* practice */
+.pnav{display:flex;gap:8px;flex-wrap:wrap}
+.pnav button{border:2px solid var(--line);background:var(--paper);border-radius:10px;padding:7px 12px;font-weight:800;cursor:pointer;text-align:left;line-height:1.25}
+.pnav button small{display:block;font-weight:600;color:var(--muted);font-size:12px}
+.pnav button[aria-current="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.pnav button.done small{color:var(--good)}
+.summary{border:2px solid var(--accent);background:var(--accent-soft);border-radius:14px;padding:14px 16px}
+.summary .score{font-family:var(--f-display);font-size:34px;font-weight:700;line-height:1}
+.group{margin-top:22px}
+.group>h3{font-size:18px;color:var(--accent);margin-bottom:10px}
+.q{display:flex;gap:12px;padding:12px;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);margin-bottom:10px}
+.q .num{flex:none;min-width:34px;height:34px;padding:0 6px;border-radius:17px;background:var(--accent-soft);color:var(--accent);font-family:var(--f-display);font-weight:700;display:flex;align-items:center;justify-content:center}
+.q-body{flex:1;min-width:0}
+.q-text{margin-bottom:8px}
+.q.ok2{border-color:var(--good);background:var(--good-bg)}
+.q.bad2{border-color:var(--bad);background:var(--bad-bg)}
+.q.part2{border-color:var(--warn);background:var(--warn-bg)}
+.choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.choice{position:relative;display:block;cursor:pointer}
+.choice input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.choice span{display:block;border:2px solid var(--line);border-radius:10px;padding:7px 12px;background:var(--paper);min-height:42px}
+.choice:hover span{border-color:var(--accent)}
+.choice input:checked+span{border-color:var(--accent);background:var(--accent-soft);font-weight:700}
+.choice input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
+.choice input:disabled{cursor:default}
+.tfs{display:flex;gap:8px}
+.tfs .choice{min-width:92px}
+input.txt,textarea.txt,select.gap,input.mini{font:inherit;color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:10px;padding:7px 11px;min-height:42px}
+input.txt,textarea.txt{width:100%}
+textarea.txt{min-height:70px;resize:vertical}
+input.mini{width:130px;display:inline-block;min-height:34px;padding:2px 8px;margin:0 3px}
+select.gap{min-height:34px;padding:2px 6px;margin:0 2px;max-width:100%}
+input.txt:focus,textarea.txt:focus,select.gap:focus,input.mini:focus{outline:3px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.passage{border:1.5px solid var(--line);border-left:5px solid var(--margin);background:var(--paper);border-radius:12px;padding:14px 16px;line-height:2}
+.box{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}
+.box span{border:2px solid var(--ink);border-radius:8px;padding:1px 12px;font-weight:800;background:var(--paper)}
+.fb{margin-top:10px;font-size:15px;border-top:1.5px dashed var(--line);padding-top:8px}
+.fb .st{font-weight:800}
+.fb .st.g{color:var(--good)} .fb .st.b{color:var(--bad)} .fb .st.p{color:var(--warn)}
+.fb .ans{margin:2px 0}
+.fb .why{color:var(--ink)}
+.fb a,.fb button.lnk{color:var(--accent);font-weight:800;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;font-size:15px}
+.chk{list-style:none;padding:0;margin:6px 0}
+.chk li::before{content:"✓ ";color:var(--good);font-weight:800}
+.chk li.x::before{content:"✗ ";color:var(--bad)}
+.note{border:1.5px dashed var(--warn);background:var(--warn-bg);border-radius:12px;padding:12px 14px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+@media (max-width:760px){
+  .gwrap{grid-template-columns:minmax(0,1fr)}
+  .gnav{position:static;flex-direction:row;overflow-x:auto;padding-bottom:6px}
+  .gnav button{flex:none;min-width:150px}
+  .brand small{display:none}
+  .tabs a{padding:6px 11px;font-size:14px}
+}
+@media (prefers-reduced-motion: reduce){
+  .tile-in,.bar>i{transition:none}
+}
+
+/* ===== v2: giao diện "sticker" – viền đậm, bóng cứng, thẻ từ hiện sẵn nghĩa ===== */
+:root{--edge:#18244a;--dot:#d6deef;--hard:4px 4px 0 var(--edge);--hard-s:2px 2px 0 var(--edge);
+  --u1:#2346c8;--u1s:#e5ebfc;--u2:#0b7a6f;--u2s:#dcf3ef;--u3:#c22f4a;--u3s:#fde6ea;--onc:#ffffff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--edge:#6e90a8;--dot:#1d3140;
+  --u1:#8db2ff;--u1s:#1d3550;--u2:#5fd8c4;--u2s:#123a37;--u3:#ff8aa0;--u3s:#40222b;--onc:#0c1a2c}}
+:root[data-theme="dark"]{--edge:#6e90a8;--dot:#1d3140;
+  --u1:#8db2ff;--u1s:#1d3550;--u2:#5fd8c4;--u2s:#123a37;--u3:#ff8aa0;--u3s:#40222b;--onc:#0c1a2c}
+body{background-color:var(--bg);background-image:radial-gradient(var(--dot) 1.3px,transparent 1.4px);background-size:22px 22px}
+.top{border-bottom:2px solid var(--edge)}
+.brand-mark{border:2px solid var(--edge);box-shadow:var(--hard-s)}
+.tabs a{border:2px solid transparent}
+.tabs a:hover{border-color:var(--edge);background:var(--paper)}
+.tabs a[aria-current="page"]{border-color:var(--edge);box-shadow:var(--hard-s)}
+.card,.hero,.step,.summary,.passage,.note{border:2px solid var(--edge);box-shadow:var(--hard)}
+.hero{border-left:10px solid var(--margin);padding:28px 24px}
+.hero h1{font-size:clamp(32px,7vw,52px)}
+.hero mark{padding:0 .18em;border-radius:6px}
+.step{transition:transform .1s,box-shadow .1s}
+.step:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--edge);border-color:var(--edge)}
+.step .big{font-size:44px}
+.step:nth-child(1) .big{color:var(--u1)}.step:nth-child(2) .big{color:var(--u2)}.step:nth-child(3) .big{color:var(--u3)}
+.btn{border:2px solid var(--edge);box-shadow:3px 3px 0 var(--edge);transition:transform .08s,box-shadow .08s}
+.btn:hover{filter:none;transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--edge)}
+.btn:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--edge)}
+.btn.ghost{background:var(--paper);color:var(--ink)}
+.btn.small{box-shadow:2px 2px 0 var(--edge)}
+.chip{border-color:var(--edge);box-shadow:2px 2px 0 var(--edge)}
+.chip[aria-pressed="true"]{box-shadow:none;transform:translate(2px,2px)}
+.pnav button,.gnav button{border-color:var(--edge);box-shadow:var(--hard-s)}
+.pnav button[aria-current="true"],.gnav button[aria-current="true"]{background:var(--hl);color:var(--on-hl);box-shadow:none;transform:translate(2px,2px)}
+.pnav button[aria-current="true"] small,.gnav button[aria-current="true"] small{color:var(--on-hl)}
+h2.sec{font-size:clamp(26px,5vw,34px);border-left:8px solid var(--margin)}
+.q{border:2px solid var(--edge);box-shadow:var(--hard-s)}
+.q .num{background:var(--hl);color:var(--on-hl);border:2px solid var(--edge)}
+.q.ok2{border-color:var(--good);box-shadow:2px 2px 0 var(--good)}
+.q.bad2{border-color:var(--bad);box-shadow:2px 2px 0 var(--bad)}
+.q.part2{border-color:var(--warn);box-shadow:2px 2px 0 var(--warn)}
+.choice span{border-color:var(--line)}
+.choice input:checked+span{border-color:var(--edge);background:var(--hl);color:var(--on-hl)}
+input.txt,textarea.txt,select.gap,input.mini{border-color:var(--edge)}
+th{border-color:var(--edge);background:var(--hl);color:var(--on-hl)}
+td{border-color:var(--line)}
+table.vt td.ipa{font-family:var(--f-ipa);color:var(--muted)}
+table.vt td{vertical-align:middle}
+.gart{overflow:hidden}
+.gart h3{font-size:30px}
+.rule{border-left-width:6px}
+.qz-opt{border-color:var(--edge);box-shadow:var(--hard-s)}
+.qz-opt.ok{box-shadow:2px 2px 0 var(--good)}.qz-opt.no{box-shadow:2px 2px 0 var(--bad)}
+
+/* thẻ từ vựng: nghĩa + ví dụ hiện sẵn, loa to */
+.vgrid{grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.wcard{--c:var(--u1);--cs:var(--u1s);display:flex;flex-direction:column;gap:8px;min-width:0;background:var(--paper);border:2px solid var(--edge);border-radius:16px;box-shadow:var(--hard);padding-bottom:14px;overflow:hidden}
+.wcard.u2{--c:var(--u2);--cs:var(--u2s)}
+.wcard.u3{--c:var(--u3);--cs:var(--u3s)}
+.wcard.known{box-shadow:4px 4px 0 var(--good)}
+.wtop{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 14px;background:var(--cs);border-bottom:2px solid var(--edge)}
+.wunit{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
+.wmain{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:4px 14px 0}
+.wword{min-width:0}
+.wcard .en{font-size:28px}
+.spk{flex:none;width:50px;height:50px;border-radius:50%;border:2px solid var(--edge);background:var(--c);color:var(--onc);box-shadow:3px 3px 0 var(--edge);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;transition:transform .08s,box-shadow .08s}
+.spk:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--edge)}
+.spk:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--edge)}
+.spk.sm{width:38px;height:38px;box-shadow:2px 2px 0 var(--edge)}
+.spk.sm svg{width:20px;height:20px}
+.wcard .vi{padding:0 14px;font-size:23px;font-weight:700;color:var(--c)}
+.wex{margin:0 14px;padding:8px 10px;background:var(--cs);border-radius:10px;display:flex;flex-direction:column;gap:2px}
+.kn{margin:2px 14px 0;border:2px solid var(--edge);background:var(--paper);color:var(--ink);border-radius:10px;padding:6px 10px;font-weight:800;cursor:pointer;min-height:40px}
+.kn:hover{background:var(--cs)}
+.kn.on{background:var(--good-bg);color:var(--good);border-color:var(--good)}
+@media (max-width:760px){.vgrid{grid-template-columns:minmax(0,1fr)}}
+</style>
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand"><span class="brand-mark">EN6</span><div><b>Ôn giữa kỳ I</b><small>Tiếng Anh 6 · Global Success · Unit 1–3</small></div></div>
+    <nav class="tabs" aria-label="Các phần ôn tập">
+      <a href="#bat-dau" data-tab="bat-dau">Bắt đầu</a>
+      <a href="#tu-vung" data-tab="tu-vung">Từ vựng</a>
+      <a href="#ngu-phap" data-tab="ngu-phap">Ngữ pháp</a>
+      <a href="#lam-bai" data-tab="lam-bai">Làm bài</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section id="tab-bat-dau" class="pane" hidden></section>
+  <section id="tab-tu-vung" class="pane" hidden></section>
+  <section id="tab-ngu-phap" class="pane" hidden></section>
+  <section id="tab-lam-bai" class="pane" hidden></section>
+</main>
+<script>
+const VOCAB=[
+{unit:1,topic:'Đồ dùng học tập',words:[
+['compass','/ˈkʌmpəs/','n','compa','We use a compass to draw circles.','Chúng ta dùng compa để vẽ hình tròn.'],
+['rubber','/ˈrʌbə(r)/','n','cục tẩy','Can I borrow your rubber?','Mình mượn cục tẩy của bạn được không?'],
+['calculator','/ˈkælkjuleɪtə(r)/','n','máy tính bỏ túi','I use a calculator in Maths.','Mình dùng máy tính bỏ túi trong giờ Toán.'],
+['pencil case','/ˈpensl keɪs/','n','hộp bút','My pencil case is blue.','Hộp bút của mình màu xanh.'],
+['sharpener','/ˈʃɑːpnə(r)/','n','đồ gọt bút chì','This sharpener is very sharp.','Cái gọt bút chì này rất sắc.'],
+['ruler','/ˈruːlə(r)/','n','thước kẻ','Draw a line with a ruler.','Hãy kẻ một đường bằng thước.'],
+['school bag','/ˈskuːl bæɡ/','n','cặp sách','He is packing his school bag.','Cậu ấy đang xếp cặp sách.'],
+['notebook','/ˈnəʊtbʊk/','n','vở ghi chép','Write it in your notebook.','Hãy viết vào vở của em.']
+]},
+{unit:1,topic:'Môn học',words:[
+['subject','/ˈsʌbdʒɪkt/','n','môn học','Maths is my favourite subject.','Toán là môn học yêu thích của mình.'],
+['Maths','/mæθs/','n','môn Toán','We have Maths on Monday.','Chúng mình học Toán vào thứ Hai.'],
+['Art','/ɑːt/','n','môn Mỹ thuật','I paint pictures in Art class.','Mình vẽ tranh trong giờ Mỹ thuật.'],
+['Science','/ˈsaɪəns/','n','môn Khoa học','Science is interesting.','Môn Khoa học rất thú vị.'],
+['History','/ˈhɪstri/','n','môn Lịch sử','We learn about Viet Nam in History.','Chúng mình học về Việt Nam trong môn Lịch sử.'],
+['Geography','/dʒiˈɒɡrəfi/','n','môn Địa lí','Geography is about countries and maps.','Địa lí nói về các quốc gia và bản đồ.'],
+['Music','/ˈmjuːzɪk/','n','môn Âm nhạc','We sing songs in Music.','Chúng mình hát trong giờ Âm nhạc.']
+]},
+{unit:1,topic:'Nơi trong trường',words:[
+['classroom','/ˈklɑːsruːm/','n','phòng học','Our classroom is large.','Phòng học của chúng mình rộng.'],
+['library','/ˈlaɪbrəri/','n','thư viện','I read books in the library.','Mình đọc sách ở thư viện.'],
+['schoolyard','/ˈskuːljɑːd/','n','sân trường','They play games in the schoolyard.','Các bạn chơi trò chơi ở sân trường.'],
+['gym','/dʒɪm/','n','phòng tập thể thao','He does judo in the gym.','Cậu ấy tập judo trong phòng tập.'],
+['swimming pool','/ˈswɪmɪŋ puːl/','n','bể bơi','Our school has a swimming pool.','Trường mình có một bể bơi.'],
+['greenhouse','/ˈɡriːnhaʊs/','n','nhà kính trồng cây','Nam looks after plants in the greenhouse.','Nam chăm sóc cây trong nhà kính.'],
+['boarding school','/ˈbɔːdɪŋ skuːl/','n','trường nội trú','She studies at a boarding school.','Cô ấy học ở một trường nội trú.'],
+['international school','/ˌɪntəˈnæʃnəl skuːl/','n','trường quốc tế','Students speak English at an international school.','Học sinh nói tiếng Anh ở trường quốc tế.']
+]},
+{unit:1,topic:'Hoạt động và từ khác',words:[
+['uniform','/ˈjuːnɪfɔːm/','n','đồng phục','We wear a uniform to school.','Chúng mình mặc đồng phục đến trường.'],
+['equipment','/ɪˈkwɪpmənt/','n','thiết bị, dụng cụ (không đếm được)','The school has modern equipment.','Trường có thiết bị hiện đại.'],
+['classmate','/ˈklɑːsmeɪt/','n','bạn cùng lớp','My classmates are friendly.','Các bạn cùng lớp của mình rất thân thiện.'],
+['activity','/ækˈtɪvəti/','n','hoạt động (số nhiều: activities)','We do many activities at break time.','Chúng mình làm nhiều hoạt động giờ ra chơi.'],
+['break time','/ˈbreɪk taɪm/','n','giờ ra chơi','We play games at break time.','Chúng mình chơi trò chơi giờ ra chơi.'],
+['homework','/ˈhəʊmwɜːk/','n','bài tập về nhà (không đếm được)','I do my homework every evening.','Mình làm bài tập về nhà mỗi tối.'],
+['judo','/ˈdʒuːdəʊ/','n','môn võ judo','Tom does judo after school.','Tom tập judo sau giờ học.'],
+['skip','/skɪp/','v','nhảy dây (skipping)','Mary is skipping with her classmates.','Mary đang nhảy dây cùng các bạn.'],
+['interview','/ˈɪntəvjuː/','v / n','phỏng vấn','Mr Hung is interviewing a student.','Thầy Hùng đang phỏng vấn một học sinh.'],
+['excited','/ɪkˈsaɪtɪd/','adj','háo hức, phấn khích','I am excited about the first day of school.','Mình háo hức về ngày đầu tiên đi học.'],
+['creative','/kriˈeɪtɪv/','adj','sáng tạo','She is creative and paints well.','Cô ấy sáng tạo và vẽ rất đẹp.'],
+['international','/ˌɪntəˈnæʃnəl/','adj','quốc tế','It is an international school.','Đó là một trường quốc tế.']
+]},
+{unit:1,topic:'Động từ + danh từ',words:[
+['play football','/pleɪ ˈfʊtbɔːl/','v + n','chơi bóng đá','They play football at break time.','Các bạn chơi bóng đá giờ ra chơi.'],
+['play badminton','/pleɪ ˈbædmɪntən/','v + n','chơi cầu lông','Linh plays badminton every week.','Linh chơi cầu lông mỗi tuần.'],
+['play volleyball','/pleɪ ˈvɒlibɔːl/','v + n','chơi bóng chuyền','She plays volleyball well.','Cô ấy chơi bóng chuyền giỏi.'],
+['play chess','/pleɪ tʃes/','v + n','chơi cờ vua','My brother plays chess.','Anh mình chơi cờ vua.'],
+['play games','/pleɪ ɡeɪmz/','v + n','chơi trò chơi','We play games in the schoolyard.','Chúng mình chơi trò chơi ở sân trường.'],
+['do homework','/duː ˈhəʊmwɜːk/','v + n','làm bài tập về nhà','I do homework after dinner.','Mình làm bài tập sau bữa tối.'],
+['do judo','/duː ˈdʒuːdəʊ/','v + n','tập judo','Nam does judo in the gym.','Nam tập judo trong phòng tập.'],
+['do morning exercise','/duː ˈmɔːnɪŋ ˈeksəsaɪz/','v + n','tập thể dục buổi sáng','We do morning exercise at 6 a.m.','Chúng mình tập thể dục lúc 6 giờ sáng.'],
+['have lunch','/hæv lʌntʃ/','v + n','ăn trưa','We have lunch at school.','Chúng mình ăn trưa ở trường.'],
+['have breakfast','/hæv ˈbrekfəst/','v + n','ăn sáng','Nam has breakfast at home.','Nam ăn sáng ở nhà.'],
+['have lessons','/hæv ˈlesnz/','v + n','có tiết học','We have lessons from 7 a.m.','Chúng mình có tiết học từ 7 giờ sáng.'],
+['study English','/ˈstʌdi ˈɪŋɡlɪʃ/','v + n','học tiếng Anh','Linh studies English every day.','Linh học tiếng Anh mỗi ngày.']
+]},
+{unit:1,topic:'Từ khác trong đề',words:[
+['projector','/prəˈdʒektə(r)/','n','máy chiếu','The classroom has a projector.','Phòng học có một máy chiếu.'],
+['computer','/kəmˈpjuːtə(r)/','n','máy tính','We use computers in IT lessons.','Chúng mình dùng máy tính trong giờ Tin học.'],
+['self-defence','/ˌself dɪˈfens/','n','môn tự vệ','Judo is good for self-defence.','Judo rất tốt cho việc tự vệ.'],
+['sharp','/ʃɑːp/','adj','sắc, nhọn','The compass is sharp.','Cái compa rất nhọn.'],
+['famous','/ˈfeɪməs/','adj','nổi tiếng','She is famous for her creativity.','Cô ấy nổi tiếng vì sự sáng tạo.'],
+['poetry','/ˈpəʊətri/','n','thơ','She writes poetry.','Cô ấy làm thơ.'],
+['paint','/peɪnt/','v','vẽ (bằng màu)','He paints pictures in Art class.','Cậu ấy vẽ tranh trong giờ Mỹ thuật.'],
+['plant','/plɑːnt/','n','cây, thực vật','He looks after the plants.','Cậu ấy chăm sóc cây.'],
+['look after','/lʊk ˈɑːftə(r)/','v','chăm sóc','They look after the plants in the greenhouse.','Các bạn chăm sóc cây trong nhà kính.'],
+['pack','/pæk/','v','xếp đồ, đóng gói','He is packing his school bag.','Cậu ấy đang xếp cặp sách.'],
+['wear','/weə(r)/','v','mặc, đeo','She wears a blue uniform.','Cô ấy mặc đồng phục màu xanh.'],
+['favourite','/ˈfeɪvərɪt/','adj','yêu thích','My favourite subject is Art.','Môn học yêu thích của mình là Mỹ thuật.'],
+['weekday','/ˈwiːkdeɪ/','n','ngày trong tuần (thứ 2 đến thứ 6)','I have breakfast at home on weekdays.','Mình ăn sáng ở nhà vào các ngày trong tuần.'],
+['weekend','/ˌwiːkˈend/','n','cuối tuần','He goes home at weekends.','Cậu ấy về nhà vào cuối tuần.']
+]},
+{unit:2,topic:'Các loại nhà',words:[
+['apartment','/əˈpɑːtmənt/','n','căn hộ','Tom lives in a small apartment.','Tom sống trong một căn hộ nhỏ.'],
+['stilt house','/ˈstɪlt haʊs/','n','nhà sàn (nhà trên các cột)','My grandparents live in a stilt house.','Ông bà mình sống trong một ngôi nhà sàn.'],
+['town house','/ˈtaʊn haʊs/','n','nhà phố','Their town house has three floors.','Nhà phố của họ có ba tầng.'],
+['country house','/ˈkʌntri haʊs/','n','nhà ở nông thôn','A country house has a big garden.','Nhà ở nông thôn có khu vườn rộng.'],
+['villa','/ˈvɪlə/','n','biệt thự','The villa is near the sea.','Biệt thự ở gần biển.']
+]},
+{unit:2,topic:'Các phòng',words:[
+['living room','/ˈlɪvɪŋ ruːm/','n','phòng khách','We watch TV in the living room.','Chúng mình xem TV ở phòng khách.'],
+['bedroom','/ˈbedruːm/','n','phòng ngủ','My bedroom is on the second floor.','Phòng ngủ của mình ở tầng hai.'],
+['kitchen','/ˈkɪtʃɪn/','n','nhà bếp','Mum cooks in the kitchen.','Mẹ nấu ăn trong bếp.'],
+['bathroom','/ˈbɑːθruːm/','n','phòng tắm','I take a shower in the bathroom.','Mình tắm trong phòng tắm.'],
+['hall','/hɔːl/','n','hành lang, sảnh','Put your shoes in the hall.','Hãy để giày ở hành lang.'],
+['dining room','/ˈdaɪnɪŋ ruːm/','n','phòng ăn','We have dinner in the dining room.','Chúng mình ăn tối ở phòng ăn.']
+]},
+{unit:2,topic:'Đồ nội thất',words:[
+['sofa','/ˈsəʊfə/','n','ghế sô-pha','There is an old sofa in the living room.','Có một chiếc sô-pha cũ trong phòng khách.'],
+['wardrobe','/ˈwɔːdrəʊb/','n','tủ quần áo','My clothes are in the wardrobe.','Quần áo của mình ở trong tủ quần áo.'],
+['cupboard','/ˈkʌbəd/','n','tủ chén, tủ bếp','The cup is in the cupboard.','Cái cốc ở trong tủ chén.'],
+['fridge','/frɪdʒ/','n','tủ lạnh','We keep milk in the fridge.','Chúng mình để sữa trong tủ lạnh.'],
+['dishwasher','/ˈdɪʃwɒʃə(r)/','n','máy rửa bát','The dishwasher cleans the plates.','Máy rửa bát làm sạch các cái đĩa.'],
+['chest of drawers','/ˌtʃest əv ˈdrɔːz/','n','tủ ngăn kéo','My socks are in the chest of drawers.','Tất của mình ở trong tủ ngăn kéo.'],
+['bookshelf','/ˈbʊkʃelf/','n','giá sách','The bookshelf is in front of the wardrobe.','Giá sách ở phía trước tủ quần áo.'],
+['table','/ˈteɪbl/','n','cái bàn','The ball is under the table.','Quả bóng ở dưới cái bàn.'],
+['lamp','/læmp/','n','đèn','There is a lamp next to my bed.','Có một cái đèn cạnh giường mình.']
+]},
+{unit:2,topic:'Từ khác về ngôi nhà',words:[
+['move','/muːv/','v','chuyển nhà, di chuyển','My family wants to move to a bigger apartment.','Gia đình mình muốn chuyển đến căn hộ lớn hơn.'],
+['wall','/wɔːl/','n','bức tường','There are pictures on the wall.','Có những bức tranh trên tường.'],
+['floor','/flɔː(r)/','n','sàn nhà; tầng','The ball is on the floor.','Quả bóng ở trên sàn.'],
+['picture','/ˈpɪktʃə(r)/','n','bức tranh, bức ảnh','I have a picture of my family.','Mình có một bức ảnh gia đình.'],
+['window','/ˈwɪndəʊ/','n','cửa sổ','The cupboard is next to the window.','Tủ chén ở cạnh cửa sổ.'],
+['garden','/ˈɡɑːdn/','n','khu vườn','There is a small garden in front of the house.','Có một khu vườn nhỏ phía trước nhà.']
+]},
+{unit:2,topic:'Giới từ chỉ vị trí',words:[
+['in','/ɪn/','prep','ở trong','The milk is in the fridge.','Sữa ở trong tủ lạnh.'],
+['on','/ɒn/','prep','ở trên (có chạm bề mặt)','The cat is on the sofa.','Con mèo ở trên ghế sô-pha.'],
+['under','/ˈʌndə(r)/','prep','ở dưới','The ball is under the table.','Quả bóng ở dưới bàn.'],
+['above','/əˈbʌv/','prep','ở phía trên (không chạm)','The lamp is above the table.','Cái đèn ở phía trên bàn.'],
+['in front of','/ɪn ˈfrʌnt əv/','prep','ở phía trước','The sofa is in front of the TV.','Ghế sô-pha ở phía trước TV.'],
+['behind','/bɪˈhaɪnd/','prep','ở phía sau','The chest of drawers is behind the sofa.','Tủ ngăn kéo ở phía sau ghế sô-pha.'],
+['next to','/ˈnekst tuː/','prep','ở cạnh','The hall is next to the living room.','Hành lang ở cạnh phòng khách.'],
+['between','/bɪˈtwiːn/','prep','ở giữa (hai vật)','My house is between the post office and the hospital.','Nhà mình ở giữa bưu điện và bệnh viện.'],
+['in the middle of','/ɪn ðə ˈmɪdl əv/','prep','ở chính giữa','There is a table in the middle of the room.','Có một cái bàn ở chính giữa căn phòng.']
+]},
+{unit:2,topic:'Từ khác trong đề',words:[
+['post office','/ˈpəʊst ɒfɪs/','n','bưu điện','The post office is on the left.','Bưu điện ở bên trái.'],
+['hospital','/ˈhɒspɪtl/','n','bệnh viện','The hospital is on the right.','Bệnh viện ở bên phải.'],
+['village','/ˈvɪlɪdʒ/','n','làng','They live in a village in Sa Pa.','Họ sống ở một ngôi làng ở Sa Pa.'],
+['mountain','/ˈmaʊntən/','n','núi','My grandparents live in the mountains.','Ông bà mình sống trên núi.'],
+['countryside','/ˈkʌntrisaɪd/','n','vùng nông thôn','Their house is in the countryside.','Nhà họ ở vùng nông thôn.'],
+['second floor','/ˈsekənd flɔː(r)/','n','tầng hai','Lan\'s room is on the second floor.','Phòng của Lan ở tầng hai.'],
+['restaurant','/ˈrestrɒnt/','n','nhà hàng','Let\'s have lunch at a restaurant.','Chúng ta đi ăn trưa ở nhà hàng nhé.'],
+['cousin','/ˈkʌzn/','n','anh, chị, em họ','This is my cousin, Peter.','Đây là anh họ mình, Peter.'],
+['keep','/kiːp/','v','giữ, cất giữ','We keep food in the fridge.','Chúng mình cất thức ăn trong tủ lạnh.'],
+['cook','/kʊk/','v','nấu ăn','My mother is cooking in the kitchen.','Mẹ mình đang nấu ăn trong bếp.']
+]},
+{unit:3,topic:'Bộ phận cơ thể',words:[
+['hair','/heə(r)/','n','tóc (không đếm được)','She has long black hair.','Cô ấy có mái tóc đen dài.'],
+['face','/feɪs/','n','khuôn mặt','He has a round face.','Cậu ấy có khuôn mặt tròn.'],
+['eye','/aɪ/','n','mắt','She has brown eyes.','Cô ấy có đôi mắt nâu.'],
+['ear','/ɪə(r)/','n','tai','The rabbit has long ears.','Con thỏ có đôi tai dài.'],
+['nose','/nəʊz/','n','mũi','He has a big nose.','Cậu ấy có cái mũi to.'],
+['mouth','/maʊθ/','n','miệng','Open your mouth.','Hãy mở miệng ra.'],
+['neck','/nek/','n','cổ','A giraffe has a long neck.','Hươu cao cổ có cái cổ dài.'],
+['shoulder','/ˈʃəʊldə(r)/','n','vai','He carries a bag on his shoulder.','Cậu ấy đeo cặp trên vai.'],
+['arm','/ɑːm/','n','cánh tay','She has a long arm.','Cô ấy có cánh tay dài.'],
+['hand','/hænd/','n','bàn tay','Wash your hands.','Hãy rửa tay.'],
+['finger','/ˈfɪŋɡə(r)/','n','ngón tay','I have ten fingers.','Mình có mười ngón tay.'],
+['leg','/leɡ/','n','chân (từ đùi đến bàn chân)','He has strong legs.','Cậu ấy có đôi chân khỏe.'],
+['foot','/fʊt/','n','bàn chân (số nhiều: feet)','My feet are small.','Bàn chân mình nhỏ.']
+]},
+{unit:3,topic:'Ngoại hình',words:[
+['appearance','/əˈpɪərəns/','n','ngoại hình','Do not judge a person by appearance.','Đừng đánh giá một người qua ngoại hình.'],
+['tall','/tɔːl/','adj','cao','My father is tall.','Bố mình cao.'],
+['short','/ʃɔːt/','adj','thấp; ngắn','She has short hair.','Cô ấy có mái tóc ngắn.'],
+['slim','/slɪm/','adj','thon thả, mảnh mai','She is tall and slim.','Cô ấy cao và thon thả.'],
+['curly hair','/ˈkɜːli heə(r)/','n','tóc xoăn','She has curly brown hair.','Cô ấy có mái tóc xoăn màu nâu.'],
+['straight hair','/streɪt heə(r)/','n','tóc thẳng','He has straight black hair.','Cậu ấy có mái tóc đen thẳng.'],
+['long hair','/lɒŋ heə(r)/','n','tóc dài','My sister has long hair.','Chị mình có tóc dài.'],
+['short hair','/ʃɔːt heə(r)/','n','tóc ngắn','My brother has short hair.','Anh mình có tóc ngắn.'],
+['brown eyes','/braʊn aɪz/','n','mắt nâu','Mary has brown eyes.','Mary có đôi mắt nâu.'],
+['blond hair','/blɒnd heə(r)/','n','tóc vàng hoe','The boy has blond hair.','Cậu bé có mái tóc vàng.'],
+['look like','/lʊk laɪk/','v','trông như thế nào','What does your friend look like?','Bạn của bạn trông như thế nào?']
+]},
+{unit:3,topic:'Tính cách',words:[
+['personality','/ˌpɜːsəˈnæləti/','n','tính cách','She has a strong personality.','Cô ấy có tính cách mạnh mẽ.'],
+['shy','/ʃaɪ/','adj','nhút nhát, e thẹn','Mai is shy with strangers.','Mai e thẹn với người lạ.'],
+['kind','/kaɪnd/','adj','tốt bụng','A kind boy helps an old lady.','Một cậu bé tốt bụng giúp một bà cụ.'],
+['funny','/ˈfʌni/','adj','hài hước, vui nhộn','My uncle is very funny.','Chú mình rất hài hước.'],
+['patient','/ˈpeɪʃnt/','adj','kiên nhẫn','Lan is patient with her brother.','Lan kiên nhẫn với em trai.'],
+['confident','/ˈkɒnfɪdənt/','adj','tự tin','Nam is confident in front of the class.','Nam tự tin khi đứng trước lớp.'],
+['hard-working','/ˌhɑːd ˈwɜːkɪŋ/','adj','chăm chỉ','Linh is hard-working.','Linh rất chăm chỉ.'],
+['sporty','/ˈspɔːti/','adj','giỏi thể thao','Susan is sporty.','Susan giỏi thể thao.'],
+['generous','/ˈdʒenərəs/','adj','hào phóng','He shares his food. He is generous.','Cậu ấy chia sẻ đồ ăn. Cậu ấy hào phóng.'],
+['friendly','/ˈfrendli/','adj','thân thiện','My classmates are friendly.','Các bạn cùng lớp mình thân thiện.'],
+['careful','/ˈkeəfl/','adj','cẩn thận','Be careful with the compass.','Hãy cẩn thận với cái compa.'],
+['caring','/ˈkeərɪŋ/','adj','chu đáo, biết quan tâm','Her personality is friendly and caring.','Cô ấy thân thiện và biết quan tâm.'],
+['active','/ˈæktɪv/','adj','năng động','Linh is an active girl.','Linh là cô bé năng động.'],
+['boring','/ˈbɔːrɪŋ/','adj','chán, tẻ nhạt','The film is boring.','Bộ phim này chán.'],
+['crazy','/ˈkreɪzi/','adj','điên rồ, kỳ quặc','My uncle is a crazy man.','Chú mình là người rất kỳ quặc.'],
+['clever','/ˈklevə(r)/','adj','thông minh','She is a clever student.','Cô ấy là học sinh thông minh.']
+]},
+{unit:3,topic:'Từ khác',words:[
+['stranger','/ˈstreɪndʒə(r)/','n','người lạ','Mai doesn\'t like talking to strangers.','Mai không thích nói chuyện với người lạ.'],
+['judge','/dʒʌdʒ/','v','đánh giá, phán xét','We should not judge a person by appearance.','Chúng ta không nên đánh giá người khác qua ngoại hình.']
+]},
+{unit:3,topic:'Từ khác trong đề',words:[
+['joke','/dʒəʊk/','n','chuyện cười, câu đùa','My uncle tells jokes.','Chú mình hay kể chuyện cười.'],
+['laugh','/lɑːf/','v','cười','Everybody laughs.','Mọi người đều cười.'],
+['gift','/ɡɪft/','n','món quà','He buys gifts for his friends.','Cậu ấy mua quà cho bạn bè.'],
+['share','/ʃeə(r)/','v','chia sẻ','He shares his food with them.','Cậu ấy chia sẻ đồ ăn với các bạn.'],
+['afraid','/əˈfreɪd/','adj','sợ, e ngại','Nam is not afraid of speaking in class.','Nam không ngại nói trước lớp.'],
+['give up','/ɡɪv ˈʌp/','v','bỏ cuộc','Linh never gives up.','Linh không bao giờ bỏ cuộc.'],
+['shout','/ʃaʊt/','v','quát, hét','Lan never shouts at her brother.','Lan không bao giờ quát em trai.'],
+['cross the road','/krɒs ðə rəʊd/','v','băng qua đường','A boy helps an old lady cross the road.','Một cậu bé giúp bà cụ băng qua đường.']
+]}
+];
+function scene(kind){
+  const S='stroke="var(--accent)" stroke-width="2"';
+  const box='fill="var(--accent-soft)"';
+  const ball=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--margin)" stroke="var(--ink)" stroke-width="1.5"/>`;
+  const floor='<line x1="8" y1="104" x2="172" y2="104" stroke="var(--muted)" stroke-width="2"/>';
+  let g='';
+  if(kind==='in'){g=`<path d="M52 44 L52 100 L128 100 L128 44" fill="none" ${S}/>`+ball(90,88,11);}
+  if(kind==='on'){g=`<rect x="52" y="62" width="76" height="42" ${box} ${S}/>`+ball(90,51,11);}
+  if(kind==='under'){g=`<rect x="44" y="42" width="92" height="10" ${box} ${S}/><line x1="52" y1="52" x2="52" y2="104" ${S}/><line x1="128" y1="52" x2="128" y2="104" ${S}/>`+ball(90,92,11);}
+  if(kind==='above'){g=`<rect x="52" y="70" width="76" height="34" ${box} ${S}/>`+ball(90,32,11);}
+  if(kind==='front'){g=`<rect x="64" y="40" width="80" height="64" ${box} ${S}/>`+ball(50,90,14);}
+  if(kind==='behind'){g=ball(100,48,12)+`<rect x="56" y="54" width="80" height="50" ${box} ${S}/>`;}
+  if(kind==='next'){g=`<rect x="30" y="58" width="56" height="46" ${box} ${S}/>`+ball(114,92,12);}
+  if(kind==='between'){g=`<rect x="14" y="58" width="48" height="46" ${box} ${S}/><rect x="118" y="58" width="48" height="46" ${box} ${S}/>`+ball(90,92,12);}
+  if(kind==='middle'){g=`<rect x="22" y="22" width="136" height="82" fill="none" ${S} stroke-dasharray="6 4"/>`+ball(90,63,12);}
+  return `<svg viewBox="0 0 180 120" role="img" aria-hidden="true">${kind==='middle'?'':floor}${g}</svg>`;
+}
+const SC=(kind,en,vi)=>`<figure>${scene(kind)}<figcaption><b>${en}</b><br>${vi}</figcaption></figure>`;
+const SP=(w,ipa)=>`<button type="button" class="sp" data-act="speak" data-t="${w}">${w}${ipa?`<i>${ipa}</i>`:''}</button>`;
+
+const GRAMMAR=[
+{id:'g-present-simple',title:'Hiện tại đơn',unit:'Unit 1',ex:'verb',html:`
+<p class="lead">Dùng để nói về <mark>thói quen</mark>, <mark>việc lặp đi lặp lại</mark> và <mark>sự thật hiển nhiên</mark>. Ví dụ: Linh học tiếng Anh mỗi ngày.</p>
+<h4>1. Động từ thường</h4>
+<div class="tbl"><table>
+<tr><th>Loại câu</th><th>Công thức</th><th>Ví dụ</th></tr>
+<tr><td>Khẳng định</td><td>S + V(s/es)</td><td>Linh <b>studies</b> English every day.</td></tr>
+<tr><td>Phủ định</td><td>S + <b>don't / doesn't</b> + V (nguyên mẫu)</td><td>Nam <b>doesn't have</b> breakfast at home.</td></tr>
+<tr><td>Nghi vấn</td><td><b>Do / Does</b> + S + V (nguyên mẫu)?</td><td><b>Does</b> your school <b>have</b> a swimming pool?</td></tr>
+<tr><td>Trả lời</td><td>Yes, S + do/does. &nbsp; No, S + don't/doesn't.</td><td>Yes, it <b>does</b>. / No, it <b>doesn't</b>.</td></tr>
+</table></div>
+<div class="rule"><b class="f">Chọn do hay does?</b><br>I, you, we, they, danh từ số nhiều (my grandparents, the students) → <b>do / don't</b>.<br>He, she, it, danh từ số ít (Nam, my mother, the cat) → <b>does / doesn't</b>.</div>
+<div class="warn"><b>Lỗi hay gặp:</b> đã có does/doesn't thì động từ chính <b>trở về nguyên mẫu</b>, không thêm -s.<br><span class="no">✗ Does she studies English?</span> &nbsp; <span class="ok">✓ Does she study English?</span></div>
+<h4>2. Cách thêm -s / -es cho he, she, it</h4>
+<div class="tbl"><table>
+<tr><th>Quy tắc</th><th>Ví dụ</th></tr>
+<tr><td>Phần lớn động từ: thêm <b>-s</b></td><td>play → plays, live → lives, sit → sits</td></tr>
+<tr><td>Tận cùng <b>s, x, z, ch, sh, o</b>: thêm <b>-es</b></td><td>watch → watches, go → goes, do → does, wash → washes</td></tr>
+<tr><td>Phụ âm + <b>y</b>: đổi y thành <b>-ies</b></td><td>study → studies, fly → flies (nhưng play → plays vì trước y là nguyên âm)</td></tr>
+<tr><td>Đặc biệt</td><td>have → <b>has</b></td></tr>
+</table></div>
+<h4>3. Động từ to be (am / is / are)</h4>
+<ul class="exs"><li>I <b>am</b> excited. &nbsp; He/She/It <b>is</b> shy. &nbsp; We/You/They <b>are</b> friendly.</li>
+<li>Phủ định: thêm <b>not</b> (isn't, aren't). Nghi vấn: đưa be lên đầu: <b>Is</b> she shy? → Yes, she <b>is</b>. / No, she <b>isn't</b>.</li></ul>
+<h4>4. Dấu hiệu nhận biết</h4>
+<p>every day / every week, usually, often, sometimes, always, never, on weekdays, at weekends, after school, on Monday.</p>
+<div class="tip"><b>Trong đề cương:</b> câu 2 (<i>every day</i>), 3 (<i>usually</i>), 5 (<i>on weekdays</i>), 7 và 9 là hiện tại đơn. Câu có <i>Look!</i>, <i>now</i>, <i>at the moment</i>, <i>right now</i> là hiện tại tiếp diễn (xem bài sau).</div>
+`},
+{id:'g-adv',title:'Trạng từ chỉ tần suất',unit:'Unit 1',ex:'write',html:`
+<p class="lead">Trạng từ chỉ tần suất cho biết việc đó xảy ra <mark>thường xuyên đến mức nào</mark>.</p>
+<div class="tbl"><table>
+<tr><th>Trạng từ</th><th>Nghĩa</th><th>Mức độ</th></tr>
+<tr><td><b>always</b></td><td>luôn luôn</td><td>100%</td></tr>
+<tr><td><b>usually</b></td><td>thường thường</td><td>khoảng 80%</td></tr>
+<tr><td><b>often</b></td><td>thường</td><td>khoảng 60–70%</td></tr>
+<tr><td><b>sometimes</b></td><td>thỉnh thoảng</td><td>khoảng 30–40%</td></tr>
+<tr><td><b>rarely</b></td><td>hiếm khi</td><td>khoảng 10%</td></tr>
+<tr><td><b>never</b></td><td>không bao giờ</td><td>0%</td></tr>
+</table></div>
+<h4>Vị trí trong câu: nhớ "sau BE, trước V"</h4>
+<div class="rule">
+<b class="f">1) Sau to be (am/is/are):</b> My brother is <mark>never</mark> late for school.<br>
+<b class="f">2) Trước động từ thường:</b> Nam <mark>usually</mark> does judo in the gym.<br>
+<b class="f">3) sometimes</b> (và often, usually) còn có thể đứng đầu câu: <i>Sometimes</i> Linh is shy with strangers.
+</div>
+<div class="warn"><b>Lỗi hay gặp:</b><br><span class="no">✗ Nam does usually judo.</span> &nbsp; <span class="ok">✓ Nam usually does judo.</span><br><span class="no">✗ My brother never is late.</span> &nbsp; <span class="ok">✓ My brother is never late.</span><br>Never đã mang nghĩa phủ định, nên <b>không</b> dùng thêm don't/doesn't: <span class="no">✗ He doesn't never play.</span></div>
+<h4>Hỏi về tần suất</h4>
+<p><b>How often</b> do you play football? — I <b>often</b> play football. / Twice a week.</p>
+`},
+{id:'g-possessive',title:'Sở hữu cách',unit:'Unit 2',ex:'write',html:`
+<p class="lead">Sở hữu cách dùng để nói <mark>ai là chủ của vật gì</mark>, rất hay dùng cho người và con vật.</p>
+<div class="tbl"><table>
+<tr><th>Chủ sở hữu</th><th>Cách viết</th><th>Ví dụ</th></tr>
+<tr><td>Danh từ số ít</td><td>thêm <b>'s</b></td><td>my brother<b>'s</b> bag, Lan<b>'s</b> room</td></tr>
+<tr><td>Danh từ số nhiều có -s</td><td>chỉ thêm dấu <b>'</b></td><td>the students<b>'</b> books, my grandparents<b>'</b> house</td></tr>
+<tr><td>Số nhiều bất quy tắc (children, men, women, people)</td><td>thêm <b>'s</b></td><td>the children<b>'s</b> toys</td></tr>
+</table></div>
+<h4>Đổi từ "the ... of ..." sang sở hữu cách trong 3 bước</h4>
+<ol class="exs">
+<li>Tìm chủ sở hữu, thường đứng sau <b>of</b>: <i>the bag of <u>my brother</u></i>.</li>
+<li>Đưa chủ sở hữu lên trước và thêm <b>'s</b> hoặc <b>'</b>: <i>my brother's</i>.</li>
+<li>Viết vật sở hữu sau đó, bỏ <b>the</b> và <b>of</b>: <i>my brother's bag</i>.</li>
+</ol>
+<div class="tbl"><table>
+<tr><th>Câu gốc</th><th>Sở hữu cách</th></tr>
+<tr><td>The room of Lan is on the second floor.</td><td><b>Lan's room</b> is on the second floor.</td></tr>
+<tr><td>These are the books of the students.</td><td>These are <b>the students' books</b>.</td></tr>
+<tr><td>The toys of the children are on the sofa.</td><td><b>The children's toys</b> are on the sofa.</td></tr>
+<tr><td>The house of my grandparents is a stilt house.</td><td><b>My grandparents' house</b> is a stilt house.</td></tr>
+</table></div>
+<div class="warn"><b>Lỗi hay gặp:</b><br><span class="no">✗ grandparents's &nbsp; ✗ childrens' &nbsp; ✗ brothers bag</span><br>Với đồ vật thì dùng <b>of</b>, không dùng 's: <i>the door of the room</i>.</div>
+`},
+{id:'g-prep',title:'Giới từ chỉ vị trí',unit:'Unit 2',ex:'write',html:`
+<p class="lead">Giới từ chỉ vị trí cho biết <mark>vật ở đâu</mark>. Quả bóng đỏ là vật cần tìm.</p>
+<div class="scenes">
+${SC('in','in','ở trong')}${SC('on','on','ở trên (chạm mặt)')}${SC('under','under','ở dưới')}${SC('above','above','ở phía trên (không chạm)')}
+${SC('front','in front of','ở phía trước')}${SC('behind','behind','ở phía sau')}${SC('next','next to','ở cạnh')}${SC('between','between','ở giữa hai vật')}${SC('middle','in the middle of','ở chính giữa')}
+</div>
+<h4>Cách đổi câu mà nghĩa không đổi</h4>
+<div class="tbl"><table>
+<tr><th>Câu gốc</th><th>Đổi thành</th><th>Quy tắc</th></tr>
+<tr><td>The hall is next to the living room.</td><td>The living room is next to the hall.</td><td>next to: đổi chỗ hai vật, giữ nguyên giới từ</td></tr>
+<tr><td>The sofa is behind the table.</td><td>The table is in front of the sofa.</td><td>behind ↔ in front of</td></tr>
+<tr><td>The bookshelf is in front of the wardrobe.</td><td>The wardrobe is behind the bookshelf.</td><td>in front of ↔ behind</td></tr>
+<tr><td>The post office is on the left of my house and the hospital is on the right.</td><td>My house is between the post office and the hospital.</td><td>một vật nằm giữa hai vật: between ... and ...</td></tr>
+<tr><td>The table is above the ball.</td><td>The ball is under the table.</td><td>above ↔ under</td></tr>
+</table></div>
+<div class="tip"><b>Mẹo:</b> dùng <b>on</b> khi vật chạm vào mặt phẳng (on the floor, on the wall, on the sofa), dùng <b>above</b> khi ở cao hơn nhưng không chạm.</div>
+`},
+{id:'g-havehas',title:'There is/are → have/has',unit:'Unit 2',ex:'write',html:`
+<p class="lead">Hai câu có thể cùng nghĩa: <i>There are two bedrooms in my house</i> = <i>My house has two bedrooms</i>.</p>
+<div class="rule"><b class="f">There is/are + vật + in + nơi chốn</b> &nbsp;→&nbsp; <b class="f">Nơi chốn + has/have + vật</b></div>
+<h4>Làm theo 3 bước</h4>
+<ol class="exs">
+<li>Lấy <b>nơi chốn</b> (sau "in") làm chủ ngữ mới: <i>my house</i>.</li>
+<li>Chọn <b>has</b> nếu nơi chốn là số ít (my house, our school, my bedroom, the living room), chọn <b>have</b> nếu là số nhiều (the rooms).</li>
+<li>Viết phần "vật" ở sau, giữ nguyên số lượng và mạo từ.</li>
+</ol>
+<div class="tbl"><table>
+<tr><th>There is/are</th><th>have/has</th></tr>
+<tr><td>There are two bedrooms in my house.</td><td>My house <b>has</b> two bedrooms.</td></tr>
+<tr><td>There is a swimming pool in our school.</td><td>Our school <b>has</b> a swimming pool.</td></tr>
+<tr><td>There is a big wardrobe in my bedroom.</td><td>My bedroom <b>has</b> a big wardrobe.</td></tr>
+<tr><td>There is a sofa and a TV in the living room.</td><td>The living room <b>has</b> a sofa and a TV.</td></tr>
+</table></div>
+<div class="warn"><b>Lỗi hay gặp:</b> chủ ngữ là một nơi chốn số ít thì dùng <b>has</b> chứ không phải have.<br><span class="no">✗ My house have two bedrooms.</span> &nbsp; <span class="ok">✓ My house has two bedrooms.</span></div>
+`},
+{id:'g-continuous',title:'Hiện tại tiếp diễn',unit:'Unit 3',ex:'verb',html:`
+<p class="lead">Dùng cho việc <mark>đang xảy ra ngay lúc nói</mark>. Dấu hiệu: <b>now, right now, at the moment, Look!, Listen!</b></p>
+<div class="tbl"><table>
+<tr><th>Loại câu</th><th>Công thức</th><th>Ví dụ</th></tr>
+<tr><td>Khẳng định</td><td>S + am/is/are + V-ing</td><td>My mother <b>is cooking</b> in the kitchen now.</td></tr>
+<tr><td>Phủ định</td><td>S + am/is/are + <b>not</b> + V-ing</td><td>Quang and Nam <b>aren't playing</b> football.</td></tr>
+<tr><td>Nghi vấn</td><td>Am/Is/Are + S + V-ing?</td><td><b>Is</b> Mr Hung <b>interviewing</b> a student?</td></tr>
+<tr><td>Trả lời</td><td>Yes, S + am/is/are. / No, S + am/is/are + not.</td><td>Yes, he <b>is</b>. / No, he <b>isn't</b>.</td></tr>
+</table></div>
+<h4>Cách thêm -ing</h4>
+<div class="tbl"><table>
+<tr><th>Quy tắc</th><th>Ví dụ</th></tr>
+<tr><td>Thường: thêm <b>-ing</b></td><td>play → playing, cook → cooking, study → studying</td></tr>
+<tr><td>Tận cùng <b>e</b> (không đọc): bỏ e rồi thêm -ing</td><td>make → making, write → writing, have → having</td></tr>
+<tr><td>1 nguyên âm + 1 phụ âm: gấp đôi phụ âm</td><td>sit → <b>sitting</b>, skip → <b>skipping</b>, run → running, swim → swimming, put → putting</td></tr>
+<tr><td>Tận cùng <b>ie</b>: đổi thành <b>ying</b></td><td>lie → lying</td></tr>
+</table></div>
+<h4>Hiện tại đơn hay hiện tại tiếp diễn?</h4>
+<div class="tbl"><table>
+<tr><th></th><th>Hiện tại đơn</th><th>Hiện tại tiếp diễn</th></tr>
+<tr><td>Nghĩa</td><td>thói quen, sự thật</td><td>đang diễn ra lúc này</td></tr>
+<tr><td>Dấu hiệu</td><td>every day, usually, on weekdays</td><td>now, at the moment, Look!</td></tr>
+<tr><td>Ví dụ</td><td>The cat <b>sits</b> on the sofa every day.</td><td>The cat <b>is sitting</b> on the sofa right now.</td></tr>
+</table></div>
+<div class="warn"><b>Lỗi hay gặp:</b> quên <b>am/is/are</b>: <span class="no">✗ Mary skipping.</span> → <span class="ok">✓ Mary is skipping.</span></div>
+`},
+{id:'g-wordform',title:'Từ loại (Word form)',unit:'Unit 1–3',ex:'word',html:`
+<p class="lead">Để điền đúng dạng từ, hãy tự hỏi: <mark>chỗ trống cần danh từ hay tính từ?</mark></p>
+<div class="rule">
+<b class="f">Cần DANH TỪ</b> khi đứng sau a / an / the, my / her / his, many / some, hoặc sau tính từ (strong, modern).<br>
+<b class="f">Cần TÍNH TỪ</b> khi đứng sau to be, very, hoặc đứng trước danh từ.
+</div>
+<div class="tbl"><table>
+<tr><th>Từ gốc</th><th>Đáp án trong đề</th><th>Loại từ</th><th>Gợi ý nhận biết</th></tr>
+<tr><td>PERSON</td><td><b>personality</b></td><td>danh từ</td><td>a strong ___ (sau a + tính từ)</td></tr>
+<tr><td>CARE</td><td><b>careful</b></td><td>tính từ</td><td>Be ___ (sau be)</td></tr>
+<tr><td>NATION</td><td><b>international</b></td><td>tính từ</td><td>an ___ school (trước danh từ)</td></tr>
+<tr><td>ACT</td><td><b>activities</b></td><td>danh từ số nhiều</td><td>many ___ (sau many)</td></tr>
+<tr><td>EXCITE</td><td><b>excited</b></td><td>tính từ</td><td>very ___ about (sau very)</td></tr>
+<tr><td>APPEAR</td><td><b>appearance</b></td><td>danh từ</td><td>their ___ (sau their)</td></tr>
+<tr><td>CREATE</td><td><b>creativity</b></td><td>danh từ</td><td>her ___ (sau her)</td></tr>
+<tr><td>FRIEND</td><td><b>friendly</b></td><td>tính từ</td><td>funny and ___ (song song với tính từ funny)</td></tr>
+<tr><td>EQUIP</td><td><b>equipment</b></td><td>danh từ</td><td>modern ___ (sau tính từ)</td></tr>
+<tr><td>SPORT</td><td><b>sporty</b></td><td>tính từ</td><td>Susan is ___ (sau be)</td></tr>
+</table></div>
+<h4>Đuôi từ thường gặp</h4>
+<ul class="exs">
+<li>Đuôi danh từ: <b>-ity</b> (personality, creativity), <b>-ment</b> (equipment), <b>-ance</b> (appearance), <b>-ity/-ies</b> (activity → activities).</li>
+<li>Đuôi tính từ: <b>-ful</b> (careful), <b>-al</b> (international), <b>-ed</b> (excited), <b>-y</b> (sporty), <b>-ly</b> (friendly).</li>
+</ul>
+<div class="tip"><b>Chú ý:</b> <i>friendly</i> tận cùng bằng -ly nhưng vẫn là <b>tính từ</b> (danh từ: friend + ly). Còn <i>excited</i> (cảm thấy háo hức) khác <i>exciting</i> (gây hào hứng).</div>
+`},
+{id:'g-sound',title:'Phát âm /ɑː/ và /ʌ/',unit:'Unit 1–3',ex:'mcq',html:`
+<p class="lead">Hai âm này hay xuất hiện ở phần <b>Choose the word whose underlined part is pronounced differently</b>. Bấm vào từ để nghe.</p>
+<div class="tbl"><table>
+<tr><th>Âm</th><th>Cách đọc</th><th>Từ trong đề cương</th></tr>
+<tr><td><b>/ɑː/</b></td><td>mở miệng rộng, đọc <b>dài</b> như "aaa"</td><td>${SP('art','/ɑːt/')}${SP('car','/kɑː/')}${SP('far','/fɑː/')}${SP('star','/stɑː/')}${SP('smart','/smɑːt/')}${SP('sharpener','/ˈʃɑːpnə/')}${SP('father','/ˈfɑːðə/')}${SP('fast','/fɑːst/')}</td></tr>
+<tr><td><b>/ʌ/</b></td><td>miệng mở nhẹ, đọc <b>ngắn</b> và dứt khoát như "ơ"</td><td>${SP('study','/ˈstʌdi/')}${SP('lunch','/lʌntʃ/')}${SP('subject','/ˈsʌbdʒɪkt/')}${SP('mum','/mʌm/')}${SP('cup','/kʌp/')}${SP('brother','/ˈbrʌðə/')}${SP('Monday','/ˈmʌndeɪ/')}${SP('rubber','/ˈrʌbə/')}</td></tr>
+</table></div>
+<h4>Mẹo đoán âm</h4>
+<ul class="exs">
+<li>Chữ <b>ar</b> thường đọc /ɑː/: art, car, far, star, smart, sharpener.</li>
+<li>Chữ <b>u</b> thường đọc /ʌ/: study, lunch, subject, mum, cup, rubber.</li>
+<li>Chữ <b>o</b> trong brother, Monday, mother, son, love cũng đọc /ʌ/.</li>
+<li>Chữ <b>a</b> trong father, fast, class, path đọc /ɑː/ (giọng Anh).</li>
+</ul>
+<div class="tip"><b>Cách làm bài:</b> đọc nhẩm từng từ, xếp vào nhóm /ɑː/ hay /ʌ/. Từ nào lạc nhóm thì chọn từ đó. Ví dụ: <i>art</i> /ɑː/ khác <i>study, lunch, subject</i> đều /ʌ/.</div>
+`},
+{id:'g-comm',title:'Giao tiếp',unit:'Unit 1–3',ex:'mcq',html:`
+<p class="lead">Câu giao tiếp thường là cặp <mark>hỏi – đáp</mark>. Hãy đọc kỹ câu đã cho để biết câu còn lại cần nói gì.</p>
+<div class="tbl"><table>
+<tr><th>Tình huống</th><th>Câu nói</th><th>Đáp lại</th></tr>
+<tr><td>Giới thiệu người</td><td>This is my cousin, Peter.</td><td>Nice to meet you.</td></tr>
+<tr><td>Hỏi thăm</td><td>How are you today?</td><td>I'm fine, thank you. And you?</td></tr>
+<tr><td>Rủ rê, gợi ý</td><td>How about having lunch at a restaurant this weekend?</td><td>That's a great idea. / Sorry, I can't.</td></tr>
+<tr><td>Hẹn gặp</td><td>Let's meet after school.</td><td>OK. See you later.</td></tr>
+</table></div>
+<h4>Ba câu hỏi dễ nhầm</h4>
+<div class="tbl"><table>
+<tr><th>Câu hỏi</th><th>Hỏi về</th><th>Trả lời</th></tr>
+<tr><td><b>What is</b> your best friend <b>like</b>?</td><td>tính cách</td><td>She is kind and funny.</td></tr>
+<tr><td>What does your best friend <b>look like</b>?</td><td>ngoại hình</td><td>She has curly brown hair.</td></tr>
+<tr><td>What does your best friend <b>like</b>?</td><td>sở thích</td><td>She likes reading books.</td></tr>
+</table></div>
+<div class="tip"><b>Mẹo:</b> nhìn câu trả lời trước. "She has curly brown hair" tả ngoại hình nên chọn <b>look like</b>.</div>
+`},
+{id:'g-skills',title:'Mẹo làm bài Reading và Writing',unit:'Reading',ex:'read',html:`
+<h4>1. Điền từ vào đoạn văn (Cloze test)</h4>
+<ul class="exs">
+<li>Đọc cả đoạn một lần trước để hiểu ý chính.</li>
+<li>Xem chỗ trống cần danh từ hay tính từ (sau <i>a</i>, <i>the</i> → danh từ; sau <i>very</i>, <i>is</i> → tính từ).</li>
+<li>Điền những chỗ chắc chắn trước, gạch từ đã dùng, từ còn lại sẽ rõ dần.</li>
+</ul>
+<h4>2. Đúng / Sai (True / False)</h4>
+<ul class="exs">
+<li>Tìm câu trong bài có <b>từ khóa</b> của câu hỏi.</li>
+<li>Câu sai thường chỉ <b>đổi một chi tiết</b>: boarding → international, football → basketball, Sunday → Monday.</li>
+<li>Chú ý <b>every week</b> (thói quen) và <b>now</b> (đang làm).</li>
+</ul>
+<h4>3. Trả lời câu hỏi</h4>
+<div class="tbl"><table>
+<tr><th>Từ để hỏi</th><th>Hỏi về</th><th>Ví dụ trả lời</th></tr>
+<tr><td>Where</td><td>nơi chốn</td><td>He studies at a boarding school in Da Lat.</td></tr>
+<tr><td>What</td><td>sự vật, việc làm</td><td>He usually plays football.</td></tr>
+<tr><td>Who</td><td>người</td><td>She is helping a new student.</td></tr>
+<tr><td>How many</td><td>số lượng</td><td>It has two bedrooms.</td></tr>
+</table></div>
+<ul class="exs">
+<li>Viết <b>câu đầy đủ</b>, đổi tên riêng thành he / she / they, giữ nguyên thì của câu hỏi.</li>
+<li>Câu hỏi <b>Yes/No</b>: dùng chính trợ động từ trong câu hỏi để trả lời. <i>Does Nam go home?</i> → Yes, he <b>does</b>. &nbsp; <i>Is Nam at school?</i> → No, he <b>isn't</b>. &nbsp; <i>Is there a garden?</i> → Yes, there <b>is</b>.</li>
+</ul>
+<h4>4. Hoàn thành câu từ từ gợi ý</h4>
+<ol class="exs">
+<li>Tìm chủ ngữ, động từ, tân ngữ. Có <i>Look!</i> hoặc <i>now</i> → hiện tại tiếp diễn. Có <i>every day</i> → hiện tại đơn.</li>
+<li>Chia động từ, thêm mạo từ (a, the) và giới từ (by, in, on) còn thiếu.</li>
+<li>Viết hoa chữ đầu câu, thêm dấu chấm hoặc dấu hỏi cuối câu.</li>
+</ol>
+<h4>5. Trả lời về bản thân (Answer about yourself)</h4>
+<p>Dùng mẫu: <i>I usually ...</i>, <i>There is / There are ... in my ...</i>, <i>My bed is next to ...</i>, <i>She is kind and funny. She has long black hair.</i></p>
+`}
+];
+const M=(n,q,o,a,e,g)=>({t:'mcq',n,q,o,a,e,g});
+const X=(q,acc,e,g,kw)=>({t:'text',q,acc,e,g,kw});
+const TF=(q,a,e)=>({t:'tf',q,a,e});
+const GAP=(a,e)=>({t:'gap',a,e});
+
+const EX=[
+{id:'mcq',name:'I. Choose the best answer',short:'Chọn đáp án',tag:'Language Focus',
+ intro:'Đọc câu và chọn A, B, C hoặc D. Làm hết rồi bấm "Nộp bài" để máy chấm và xem giải thích.',
+ groups:[
+ {h:'Câu 1–10 · Unit 1: My new school',items:[
+  M(1,'We wear a ______ when we go to school.',['compass','rubber','uniform','calculator'],2,'<b>uniform</b> = đồng phục. Chúng ta mặc đồng phục khi đến trường.'),
+  M(2,'Mai is skipping with her ______ in the schoolyard.',['classmates','subjects','interviews','greenhouses'],0,'Nhảy dây (skipping) <b>với các bạn cùng lớp</b> (classmates) ở sân trường. Các từ còn lại không hợp nghĩa.'),
+  M(3,'We use a ______ to draw circles in Maths.',['rubber','pencil case','judo','compass'],3,'<b>compass</b> = compa, dụng cụ dùng để vẽ hình tròn.'),
+  M(4,'Our school has a ______, so we can learn to swim.',['greenhouse','swimming pool','compass','subject'],1,'Học bơi thì cần <b>swimming pool</b> (bể bơi).'),
+  M(5,'My brother lives and studies at a ______. He only comes home at weekends.',['judo','greenhouse','boarding school','calculator'],2,'Sống và học ở trường, cuối tuần mới về nhà → <b>boarding school</b> (trường nội trú).'),
+  M(6,'Maths, English and Art are school ______.',['activities','subjects','classmates','interviews'],1,'Maths, English, Art là các <b>môn học</b> = school subjects.'),
+  M(7,'My new school has large classrooms and modern ______, such as computers and projectors.',['equipment','judo','uniform','rubber'],0,'Máy tính và máy chiếu là <b>thiết bị</b> = equipment (danh từ không đếm được).'),
+  M(8,"I'm very ______ about the first day of school. I can't wait to see my friends.",['creative','excited','international','crazy'],1,'<b>excited about</b> = háo hức về. "Can\'t wait" cũng cho thấy sự mong chờ.'),
+  M(9,'Tom wants to learn self-defence. He does ______ in the gym after school.',['greenhouse','equipment','calculator','judo'],3,'Học tự vệ (self-defence) thì tập <b>judo</b>. Cấu trúc: do judo.'),
+  M(10,'Students from many countries study in English at an ______ school.',['international','boarding','excited','creative'],0,'Học sinh nhiều nước → <b>international school</b> (trường quốc tế). Trước chỗ trống là "an" nên cần từ bắt đầu bằng nguyên âm.')
+ ]},
+ {h:'Câu 11–20 · Unit 2: My house',items:[
+  M(11,'We cook meals in the ______.',['bathroom','kitchen','hall','wardrobe'],1,'Nấu ăn ở <b>kitchen</b> (nhà bếp).'),
+  M(12,'We keep milk and food cold in the ______.',['fridge','sofa','cupboard','wardrobe'],0,'Giữ sữa và thức ăn lạnh → <b>fridge</b> (tủ lạnh).'),
+  M(13,'My clothes are in the ______ in my bedroom.',['dishwasher','hall','wardrobe','fridge'],2,'Quần áo để trong <b>wardrobe</b> (tủ quần áo).'),
+  M(14,'My grandparents live in a ______ in the mountains. It is a house on posts.',['apartment','stilt house','living room','hall'],1,'House on posts (nhà trên các cột) = <b>stilt house</b> (nhà sàn).'),
+  M(15,'We watch TV and relax in the ______.',['bathroom','kitchen','fridge','living room'],3,'Xem TV và thư giãn ở <b>living room</b> (phòng khách).'),
+  M(16,'Dad puts dirty plates into the ______, and it cleans them.',['cupboard','sofa','hall','dishwasher'],3,'Máy làm sạch đĩa bẩn → <b>dishwasher</b> (máy rửa bát).'),
+  M(17,'My socks and T-shirts are in the ______ in my bedroom.',['chest of drawers','dishwasher','bathroom','stilt house'],0,'Tất và áo phông cất trong <b>chest of drawers</b> (tủ ngăn kéo) ở phòng ngủ.'),
+  M(18,'My family wants to ______ to a bigger apartment.',['interview','help','move','behind'],2,'<b>move to</b> = chuyển đến. "Behind" là giới từ nên không đi sau "to".'),
+  M(19,'Which word does NOT belong to the group?',['sofa','wardrobe','hall','cupboard'],2,'Sofa, wardrobe, cupboard là <b>đồ nội thất</b>. <b>Hall</b> là một phần của ngôi nhà (hành lang), nên khác nhóm.'),
+  M(20,'I need to take a shower. Where is the ______?',['dining room','living room','bedroom','bathroom'],3,'Tắm (take a shower) ở <b>bathroom</b> (phòng tắm).')
+ ]},
+ {h:'Câu 21–30 · Unit 3: My friends',items:[
+  M(21,"Mai doesn't like talking to strangers. She is very ______.",['generous','shy','funny','sporty'],1,'Không thích nói chuyện với người lạ → <b>shy</b> (nhút nhát).'),
+  M(22,'Susan plays tennis, football and volleyball very well. She is ______.',['sporty','shy','patient','boring'],0,'Chơi giỏi nhiều môn thể thao → <b>sporty</b>.'),
+  M(23,'He often buys gifts for his friends and shares his food with them. He is ______.',['boring','shy','generous','crazy'],2,'Hay tặng quà và chia sẻ đồ ăn → <b>generous</b> (hào phóng).'),
+  M(24,'My uncle often tells jokes and makes everybody laugh. He is very ______.',['patient','careful','shy','funny'],3,'Kể chuyện cười làm mọi người cười → <b>funny</b> (hài hước).'),
+  M(25,'Linh studies for hours every day and never gives up. She is ______.',['boring','hard-working','shy','funny'],1,'Học nhiều giờ mỗi ngày, không bỏ cuộc → <b>hard-working</b> (chăm chỉ).'),
+  M(26,'Lan never shouts at her little brother. She waits and listens to him. She is very ______.',['crazy','sporty','patient','funny'],2,'Không quát, biết chờ và lắng nghe → <b>patient</b> (kiên nhẫn).'),
+  M(27,'A boy helps an old lady cross the road. He is very ______.',['kind','boring','shy','sporty'],0,'Giúp bà cụ qua đường → <b>kind</b> (tốt bụng).'),
+  M(28,'Nam is not afraid of speaking in front of the class. He is ______.',['shy','careful','confident','boring'],2,'Không sợ nói trước lớp → <b>confident</b> (tự tin).'),
+  M(29,'We should not judge a person only by their ______.',['furniture','subject','activity','appearance'],3,'Không nên đánh giá người khác chỉ qua <b>appearance</b> (ngoại hình).','g-wordform'),
+  M(30,'Her ______ is friendly and caring, so everybody loves her.',['personality','uniform','equipment','apartment'],0,'Thân thiện, biết quan tâm là nói về <b>personality</b> (tính cách).','g-wordform')
+ ]},
+ {h:'Câu 31–35 · Giới từ chỉ vị trí và sở hữu cách',items:[
+  M(31,'My house is ______ the post office and the hospital. The post office is on its left and the hospital is on its right.',['under','between','behind','next to'],1,'Một bên là bưu điện, một bên là bệnh viện → nhà ở <b>between</b> (ở giữa) hai nơi đó.','g-prep'),
+  M(32,'The dog is hiding at the back of the sofa. It is ______ the sofa.',['in front of','under','behind','between'],2,'At the back of = ở phía sau → <b>behind</b>.','g-prep'),
+  M(33,'This is my ______ bedroom.',["brothers'","brother's",'brothers','brother'],1,"Chủ sở hữu là một người anh/em (số ít) → thêm <b>'s</b>: my <b>brother's</b> bedroom.",'g-possessive'),
+  M(34,'My ______ house is in the countryside.',['grandparent',"grandparents's",'grandparents',"grandparents'"],3,"grandparents là số nhiều đã có -s → chỉ thêm dấu <b>'</b>: <b>grandparents'</b> house.",'g-possessive'),
+  M(35,'Where are the ______ toys?',["childrens'",'childrens',"children's","childrens's"],2,"children là số nhiều bất quy tắc (không có -s) → thêm <b>'s</b>: <b>children's</b> toys.",'g-possessive')
+ ]},
+ {h:'Câu 36 · Phát âm: chọn từ có phần gạch chân đọc khác các từ còn lại',items:[
+  M('36a','Choose the word whose underlined part is pronounced differently from the others.',['st<u>u</u>dy','l<u>u</u>nch','s<u>u</u>bject','<u>ar</u>t'],3,'<b>art</b> đọc /ɑː/. Study, lunch, subject đều đọc /ʌ/.','g-sound'),
+  M('36b','Choose the word whose underlined part is pronounced differently from the others.',['c<u>ar</u>','m<u>u</u>m','f<u>a</u>st','f<u>a</u>ther'],1,'<b>mum</b> đọc /ʌ/. Car, fast, father đều đọc /ɑː/.','g-sound'),
+  M('36c','Choose the word whose underlined part is pronounced differently from the others.',['c<u>u</u>p','br<u>o</u>ther','M<u>o</u>nday','f<u>ar</u>'],3,'<b>far</b> đọc /ɑː/. Cup, brother, Monday đều đọc /ʌ/.','g-sound'),
+  M('36d','Choose the word whose underlined part is pronounced differently from the others.',['sm<u>ar</u>t','sh<u>ar</u>pener','r<u>u</u>bber','st<u>ar</u>'],2,'<b>rubber</b> đọc /ʌ/. Smart, sharpener, star đều đọc /ɑː/.','g-sound')
+ ]},
+ {h:'Câu 37–39 · Giao tiếp',items:[
+  M(37,'Army: "________________" - Jack: "Nice to meet you."',['See you later, Peter.','This is my cousin, Peter.','How are you today, Peter?',"Let's meet after school, Peter."],1,'"Nice to meet you" là lời đáp khi được <b>giới thiệu</b> với ai đó → "This is my cousin, Peter."','g-comm'),
+  M(38,'Ashley: "How about having lunch at a restaurant this weekend?" - Ben: "______________"',["That's a great idea.","Yes, I'll have some.",'Not at all.',"I'm doing that soon."],0,'"How about ...?" là lời <b>gợi ý</b>. Đồng ý thì nói "That\'s a great idea."','g-comm'),
+  M(39,'Arthur: "__________________________" - Sam: "She has curly brown hair."',['What is your best friend like?','What does your best friend like?','What does your best friend look like?','What is your best friend liking?'],2,'"She has curly brown hair" tả <b>ngoại hình</b> → câu hỏi là <b>What does ... look like?</b>','g-comm')
+ ]}
+ ]},
+
+{id:'word',name:'II. Word form',short:'Dạng từ',tag:'Language Focus',
+ intro:'Viết dạng đúng của từ trong ngoặc (PERSON, CARE, ...). Nhớ: sau a/the/her/many cần danh từ, sau be/very cần tính từ.',
+ groups:[{h:'Give the correct form of the words in brackets.',items:[
+  X('1. My best friend has a strong ____________ . (PERSON)',['personality'],'Sau "a strong" cần <b>danh từ</b>: personality (tính cách).','g-wordform'),
+  X('2. Be ____________ when you use the compass. It is sharp. (CARE)',['careful'],'Sau "Be" cần <b>tính từ</b>: careful (cẩn thận).','g-wordform'),
+  X('3. Her daughter studies at an ____________ school in town. (NATION)',['international'],'Trước danh từ "school" cần <b>tính từ</b>: international (quốc tế).','g-wordform'),
+  X('4. We do many ____________ at break time. (ACT)',['activities'],'Sau "many" cần danh từ <b>số nhiều</b>: activity → activities.','g-wordform'),
+  X('5. The students are very ____________ about the first day of school. (EXCITE)',['excited'],'Sau "are very" cần tính từ: <b>excited</b> (háo hức), vì học sinh là người cảm thấy.','g-wordform'),
+  X('6. You shouldn\'t judge people by their ____________ . (APPEAR)',['appearance'],'Sau "their" cần danh từ: <b>appearance</b> (ngoại hình).','g-wordform'),
+  X('7. She is famous for her ____________ : she writes poetry and paints. (CREATE)',['creativity'],'Sau "her" cần danh từ: <b>creativity</b> (sự sáng tạo).','g-wordform'),
+  X('8. Most students in my school are funny and ____________ . (FRIEND)',['friendly'],'"funny and ..." cần tính từ cùng loại: <b>friendly</b> (thân thiện).','g-wordform'),
+  X('9. My new school has large classrooms and modern ____________ . (EQUIP)',['equipment'],'Sau tính từ "modern" cần danh từ: <b>equipment</b> (thiết bị).','g-wordform'),
+  X('10. Susan is ____________ and plays tennis very skillfully. (SPORT)',['sporty'],'Sau "is" cần tính từ: <b>sporty</b> (giỏi thể thao).','g-wordform')
+ ]}]},
+
+{id:'verb',name:'III. Verb tense',short:'Chia động từ',tag:'Language Focus',
+ intro:'Chia động từ trong ngoặc ở hiện tại đơn hoặc hiện tại tiếp diễn. Tìm dấu hiệu: every day, usually, on weekdays (đơn) hoặc Look!, now, at the moment (tiếp diễn).',
+ groups:[{h:'Put the verbs in brackets in the correct tense.',items:[
+  X('1. Look! Mary (skip) ____________ with her classmates in the schoolyard.',['is skipping',"'s skipping"],'Có <b>Look!</b> → hiện tại tiếp diễn. Skip gấp đôi p: <b>is skipping</b>.','g-continuous'),
+  X('2. Linh (study) ____________ English and Maths every day.',['studies'],'<b>every day</b> → hiện tại đơn. Chủ ngữ Linh (số ít), study → <b>studies</b>.','g-present-simple'),
+  X('3. They usually (do) ____________ judo in the gym after school.',['do'],'<b>usually</b> → hiện tại đơn. They → động từ giữ nguyên: <b>do</b>.','g-present-simple'),
+  X('4. My mother (cook) ____________ in the kitchen now.',['is cooking',"'s cooking"],'<b>now</b> → hiện tại tiếp diễn: <b>is cooking</b>.','g-continuous'),
+  X('5. Nam (not have) ____________ breakfast at home on weekdays.',["doesn't have",'does not have'],'<b>on weekdays</b> → hiện tại đơn, phủ định, chủ ngữ Nam: <b>doesn\'t have</b>.','g-present-simple'),
+  X('6. Quang and Nam (not play) ____________ football at the moment.',["aren't playing",'are not playing'],'<b>at the moment</b> → hiện tại tiếp diễn, phủ định, chủ ngữ số nhiều: <b>aren\'t playing</b>.','g-continuous'),
+  X('7. My grandparents (live) ____________ in a stilt house.',['live'],'Nói về sự thật, chỗ ở → hiện tại đơn. My grandparents (số nhiều) → <b>live</b>.','g-present-simple'),
+  X('8. The cat (sit) ____________ on the sofa right now.',['is sitting',"'s sitting"],'<b>right now</b> → hiện tại tiếp diễn. Sit gấp đôi t: <b>is sitting</b>.','g-continuous'),
+  X('9. (your school / have) ____________ a swimming pool?',['does your school have'],'Hỏi về sự thật → hiện tại đơn. Chủ ngữ your school (số ít): <b>Does your school have</b> ...?','g-present-simple'),
+  X('10. Mr Hung (interview) ____________ a student at the moment.',['is interviewing',"'s interviewing"],'<b>at the moment</b> → hiện tại tiếp diễn: <b>is interviewing</b>.','g-continuous')
+ ]}]},
+
+{id:'gap',name:'IV. Reading · Task 1',short:'Điền từ vào đoạn văn',tag:'Reading',
+ intro:'Chọn từ trong khung để điền vào mỗi chỗ trống. Mỗi từ chỉ dùng một lần.',
+ groups:[
+  {h:'Passage 1 (Unit 1): Lan\'s new school',box:['judo','uniform','classmates','equipment'],
+   passage:'Lan is a new student at an international school. Every day, she wears a blue [[1]] and goes to school by bike. Her school has large classrooms and modern [[2]]. She has many [[3]] in her class and they are very friendly. After school, she usually does [[4]] in the gym. She is very excited about her new school.',
+   items:[GAP('uniform','Wears a blue ... → <b>uniform</b> (đồng phục).'),GAP('equipment','Modern ... → <b>equipment</b> (thiết bị hiện đại).'),GAP('classmates','many ... in her class → <b>classmates</b> (bạn cùng lớp).'),GAP('judo','does ... in the gym → <b>judo</b> (do judo).')]},
+  {h:'Passage 2 (Unit 2): Tom\'s apartment',box:['wardrobe','kitchen','next to','sofa'],
+   passage:'Tom lives in a small apartment in Ha Noi. There are two bedrooms, a bathroom, a [[1]] and a living room. There is a big [[2]] in the living room, and Tom often watches TV there. His bedroom is [[3]] the bathroom. In his bedroom, there is a [[4]] for his clothes.',
+   items:[GAP('kitchen','Các phòng: bedrooms, bathroom, ..., living room → <b>kitchen</b>.'),GAP('sofa','Big ... in the living room, xem TV ở đó → <b>sofa</b>.'),GAP('next to','His bedroom is ... the bathroom → <b>next to</b> (cạnh).'),GAP('wardrobe','A ... for his clothes → <b>wardrobe</b> (tủ quần áo).')]},
+  {h:'Passage 3 (Unit 3): My best friend',box:['patient','shy','funny','confident'],
+   passage:'My friend Nga is a [[1]] girl. She often tells jokes and everybody laughs. She is also very [[2]] because she isn\'t afraid of speaking in front of the class. Nga is very [[3]] with her younger brother. She never shouts at him. But I am different. I am [[4]] with strangers and I don\'t talk much.',
+   items:[GAP('funny','Hay kể chuyện cười, mọi người cười → <b>funny</b>.'),GAP('confident','Không sợ nói trước lớp → <b>confident</b>.'),GAP('patient','Không quát em trai → <b>patient</b> (kiên nhẫn).'),GAP('shy','Khác Nga: ít nói với người lạ → <b>shy</b>.')]}
+ ]},
+
+{id:'read',name:'IV. Reading · Task 2',short:'Đọc hiểu, Đúng/Sai',tag:'Reading',
+ intro:'Đọc đoạn văn, quyết định câu Đúng (T) hay Sai (F), rồi trả lời câu hỏi bằng câu đầy đủ.',
+ groups:[
+  {h:'Passage 1 (Unit 1): Nam\'s school life',
+   passage:'Nam studies at a boarding school in Da Lat. He lives and studies there from Monday to Friday. His favourite subjects are Maths and Art. At break time, he usually plays football with his classmates in the schoolyard. Sometimes he goes to the school greenhouse and looks after the plants. At weekends, Nam goes home. Now it is Sunday evening. Nam is at home and he is packing his school bag. He is putting his compass, calculator and pencil case into it.',
+   sub:[
+   {h:'Decide whether the statements are True (T) or False (F).',items:[
+    TF('1. Nam studies at an international school.',false,'Bài viết: "a <b>boarding</b> school in Da Lat", không phải international school → <b>F</b>.'),
+    TF('2. Nam lives at school from Monday to Friday.',true,'"He lives and studies there from Monday to Friday" → <b>T</b>.'),
+    TF("3. Art is one of Nam's favourite subjects.",true,'"His favourite subjects are Maths and Art" → <b>T</b>.'),
+    TF('4. Nam usually plays basketball at break time.',false,'Bài viết: "usually plays <b>football</b>", không phải basketball → <b>F</b>.'),
+    TF('5. Nam is packing his school bag at home now.',true,'"Nam is at home and he is packing his school bag" → <b>T</b>.')]},
+   {h:'Answer the questions.',items:[
+    X('1. Where does Nam study?',['He studies at a boarding school in Da Lat.','At a boarding school in Da Lat.','A boarding school in Da Lat.','He studies at a boarding school.'],'Where hỏi nơi chốn. Đáp án: <b>He studies at a boarding school in Da Lat.</b>','g-skills',[['boarding school']]),
+    X('2. What does Nam usually do at break time?',['He usually plays football with his classmates in the schoolyard.','He usually plays football with his classmates.','He usually plays football.','He plays football with his classmates.'],'Đáp án: <b>He usually plays football with his classmates in the schoolyard.</b>','g-skills',[['football']]),
+    X('3. What is Nam putting into his school bag?',['He is putting his compass, calculator and pencil case into it.','He is putting his compass, calculator and pencil case into his school bag.','His compass, calculator and pencil case.'],'Đáp án: <b>He is putting his compass, calculator and pencil case into it.</b> (giữ hiện tại tiếp diễn)','g-skills',[['compass'],['calculator'],['pencil case']]),
+    X('4. Does Nam go home at weekends?',["Yes, he does."],'Câu hỏi bắt đầu bằng Does → trả lời <b>Yes, he does.</b> ("At weekends, Nam goes home.")','g-skills',[['yes']]),
+    X('5. Is Nam at school now?',["No, he isn't.",'No, he is not.'],'Câu hỏi bắt đầu bằng Is → trả lời <b>No, he isn\'t.</b> (Nam đang ở nhà.)','g-skills',[['no']])]}
+   ]},
+  {h:'Passage 2 (Unit 2): Hoa\'s grandparents\' house',
+   passage:'Hoa\'s grandparents live in a stilt house in a village in Sa Pa. The house has a living room, two bedrooms and a small kitchen. In front of the house, there is a small garden. There isn\'t a dishwasher in the kitchen, but there is a big cupboard next to the window. In the living room, there is an old sofa in front of the TV. A chest of drawers is behind the sofa.',
+   sub:[
+   {h:'Decide whether the statements are True (T) or False (F).',items:[
+    TF("1. Hoa's grandparents live in an apartment in Sa Pa.",false,'Bài viết: "live in a <b>stilt house</b>", không phải apartment → <b>F</b>.'),
+    TF('2. The house has two bedrooms.',true,'"The house has a living room, <b>two bedrooms</b> and a small kitchen" → <b>T</b>.'),
+    TF('3. There is a dishwasher in the kitchen.',false,'"There <b>isn\'t</b> a dishwasher in the kitchen" → <b>F</b>.'),
+    TF('4. The cupboard is next to the window.',true,'"a big cupboard next to the window" → <b>T</b>.'),
+    TF('5. The chest of drawers is behind the sofa.',true,'"A chest of drawers is behind the sofa" → <b>T</b>.')]},
+   {h:'Answer the questions.',items:[
+    X("1. Where do Hoa's grandparents live?",['They live in a stilt house in a village in Sa Pa.','In a stilt house in a village in Sa Pa.','They live in a stilt house.','A stilt house in a village in Sa Pa.'],'Where hỏi nơi chốn. Đáp án: <b>They live in a stilt house in a village in Sa Pa.</b>','g-skills',[['stilt house']]),
+    X('2. How many bedrooms does the house have?',['It has two bedrooms.','The house has two bedrooms.','Two bedrooms.','Two.','It has 2 bedrooms.'],'How many hỏi số lượng. Đáp án: <b>It has two bedrooms.</b>','g-skills',[['two','2']]),
+    X('3. What is behind the sofa?',['A chest of drawers is behind the sofa.','A chest of drawers.','The chest of drawers is behind the sofa.'],'Đáp án: <b>A chest of drawers is behind the sofa.</b>','g-skills',[['chest of drawers']]),
+    X('4. Is there a garden in front of the house?',['Yes, there is.'],'Câu hỏi Is there ... → trả lời <b>Yes, there is.</b> ("In front of the house, there is a small garden.")','g-skills',[['yes']]),
+    X('5. Is there a dishwasher in the kitchen?',["No, there isn't.",'No, there is not.'],'Bài viết: "There isn\'t a dishwasher" → trả lời <b>No, there isn\'t.</b>','g-skills',[['no']])]}
+   ]},
+  {h:'Passage 3 (Unit 3): My classmate Linh',
+   passage:'Linh is my classmate. She is a sporty and active girl. She plays badminton and volleyball every week. Linh is also kind and caring. She often helps her classmates with their homework. She is hard-working, too. Look! Linh is helping a new student with her Maths homework.',
+   sub:[
+   {h:'Decide whether the statements are True (T) or False (F).',items:[
+    TF('1. Linh is a boring girl.',false,'Bài viết: "a <b>sporty and active</b> girl" → <b>F</b>.'),
+    TF('2. She plays badminton and volleyball every week.',true,'"She plays badminton and volleyball every week" → <b>T</b>.'),
+    TF('3. Linh often helps her classmates with their homework.',true,'"She often helps her classmates with their homework" → <b>T</b>.'),
+    TF('4. Linh is hard-working.',true,'"She is hard-working, too" → <b>T</b>.'),
+    TF('5. Linh is talking to her teacher now.',false,'"Look! Linh is helping <b>a new student</b>", không phải nói chuyện với giáo viên → <b>F</b>.')]},
+   {h:'Answer the questions.',items:[
+    X('1. What does Linh play every week?',['She plays badminton and volleyball every week.','She plays badminton and volleyball.','Badminton and volleyball.'],'Đáp án: <b>She plays badminton and volleyball every week.</b>','g-skills',[['badminton'],['volleyball']]),
+    X('2. What does Linh often do for her classmates?',['She often helps her classmates with their homework.','She often helps them with their homework.','She helps her classmates with their homework.'],'Đáp án: <b>She often helps her classmates with their homework.</b>','g-skills',[['help'],['homework']]),
+    X('3. Who is Linh helping now?',['She is helping a new student.','She is helping a new student with her Maths homework.','A new student.'],'Who hỏi người. Đáp án: <b>She is helping a new student.</b> (hiện tại tiếp diễn vì có now)','g-skills',[['new student']]),
+    X('4. Is Linh sporty?',["Yes, she is."],'Bài viết: "a sporty and active girl" → trả lời <b>Yes, she is.</b>','g-skills',[['yes']]),
+    X('5. Does Linh play tennis?',["No, she doesn't.",'No, she does not.'],'Linh chơi badminton và volleyball, không nhắc đến tennis → <b>No, she doesn\'t.</b>','g-skills',[['no']])]}
+   ]}
+ ]},
+
+{id:'write',name:'V. Writing',short:'Viết lại câu',tag:'Writing',
+ intro:'Viết lại câu theo yêu cầu. Máy chấm không phân biệt chữ hoa, chữ thường và dấu chấm, nhưng dấu nháy (\') và từ vẫn phải đúng.',
+ groups:[
+  {h:'Task 1. Rewrite the sentences using the possessive case.',items:[
+   X("1. This is the bag of my brother.  →  This ______________________",["this is my brother's bag"],"Chủ sở hữu: my brother (số ít) → <b>my brother's bag</b>.",'g-possessive'),
+   X("2. The room of Lan is on the second floor.  →  The ______________________",["lan's room is on the second floor"],"Lan (số ít) → <b>Lan's room</b> is on the second floor.",'g-possessive'),
+   X("3. These are the books of the students.  →  These ______________________",["these are the students' books"],"students là số nhiều có -s → chỉ thêm ': <b>the students' books</b>.",'g-possessive'),
+   X("4. The toys of the children are on the sofa.  →  The ______________________",["the children's toys are on the sofa"],"children là số nhiều bất quy tắc → <b>the children's toys</b>.",'g-possessive'),
+   X("5. The house of my grandparents is a stilt house.  →  The ______________________",["my grandparents' house is a stilt house","the my grandparents' house is a stilt house"],"grandparents là số nhiều có -s → <b>My grandparents' house</b> is a stilt house.",'g-possessive')
+  ]},
+  {h:'Task 2. Rewrite the sentences using have/has.',items:[
+   X('1. There are two bedrooms in my house.  →  My ______________________',['my house has two bedrooms'],'Nơi chốn (my house) làm chủ ngữ, số ít → <b>has</b>: My house has two bedrooms.','g-havehas'),
+   X('2. There is a swimming pool in our school.  →  Our ______________________',['our school has a swimming pool'],'Our school (số ít) → <b>has</b>: Our school has a swimming pool.','g-havehas'),
+   X('3. There is a big wardrobe in my bedroom.  →  My ______________________',['my bedroom has a big wardrobe'],'My bedroom (số ít) → <b>has</b>: My bedroom has a big wardrobe.','g-havehas'),
+   X('4. There is a sofa and a TV in the living room.  →  The ______________________',['the living room has a sofa and a tv'],'The living room (số ít) → <b>has</b>: The living room has a sofa and a TV.','g-havehas')
+  ]},
+  {h:'Task 3. Put the adverbs of frequency in the correct position.',items:[
+   X('1. Nam does judo in the gym after school. (usually)  →  Nam ______________________',['nam usually does judo in the gym after school'],'Trạng từ đứng <b>trước động từ thường</b> (does): Nam usually does judo ...','g-adv'),
+   X('2. My brother is late for school. (never)  →  My ______________________',['my brother is never late for school'],'Trạng từ đứng <b>sau to be</b> (is): My brother is never late ...','g-adv'),
+   X('3. We play games in the schoolyard at break time. (often)  →  We ______________________',['we often play games in the schoolyard at break time','often we play games in the schoolyard at break time'],'Often đứng trước động từ thường (play): We often play games ... (đứng đầu câu cũng được).','g-adv'),
+   X('4. Mai helps her classmates with their homework. (always)  →  Mai ______________________',['mai always helps her classmates with their homework'],'Always đứng trước động từ thường (helps): Mai always helps ...','g-adv'),
+   X('5. Linh is shy with strangers. (sometimes)  →  Linh ______________________',['linh is sometimes shy with strangers','sometimes linh is shy with strangers'],'Sometimes đứng sau to be (is) hoặc đầu câu: Linh is sometimes shy ... / Sometimes Linh is shy ...','g-adv')
+  ]},
+  {h:'Task 4. Rewrite the sentences using prepositions of place.',items:[
+   X('1. The hall is next to the living room.  →  The living room ______________________',['the living room is next to the hall'],'Next to: đổi chỗ hai vật → The living room is next to the hall.','g-prep'),
+   X('2. The sofa is behind the table.  →  The table ______________________',['the table is in front of the sofa'],'Behind ↔ in front of → The table is <b>in front of</b> the sofa.','g-prep'),
+   X('3. The bookshelf is in front of the wardrobe.  →  The wardrobe ______________________',['the wardrobe is behind the bookshelf'],'In front of ↔ behind → The wardrobe is <b>behind</b> the bookshelf.','g-prep'),
+   X('4. The post office is on the left of my house and the hospital is on the right of my house.  →  My house ______________________',['my house is between the post office and the hospital','my house is between the hospital and the post office'],'Hai bên là hai nơi → My house is <b>between</b> the post office <b>and</b> the hospital.','g-prep'),
+   X('5. The ball is on the floor. The table is above the ball.  →  The ball ______________________',['the ball is under the table'],'Above ↔ under → The ball is <b>under</b> the table.','g-prep')
+  ]},
+  {h:'Task 5. Use the cues to write complete sentences. Add words and change the verb forms where necessary.',items:[
+   X('1. Look! / the boys / play / football / and / the girls / skip / in the schoolyard.',['look the boys are playing football and the girls are skipping in the schoolyard'],'<b>Look!</b> → hiện tại tiếp diễn: Look! The boys <b>are playing</b> football and the girls <b>are skipping</b> in the schoolyard.','g-continuous',[['are playing'],['are skipping']]),
+   X('2. Nam / go / to / school / bicycle / every day.',['nam goes to school by bicycle every day','nam goes to school by bike every day'],'<b>every day</b> → hiện tại đơn, Nam số ít nên go → goes; thêm <b>by</b>: Nam goes to school by bicycle every day.','g-present-simple',[['goes'],['by']]),
+   X('3. How many / pictures / there / wall?',['how many pictures are there on the wall'],'Hỏi số lượng danh từ số nhiều: How many pictures <b>are there on</b> the wall?','g-havehas',[['are there'],['on the wall']]),
+   X('4. Our grandparents / watch / TV / in / living room / now.',['our grandparents are watching tv in the living room now','our grandparents are watching tv in the living room'],'<b>now</b> → hiện tại tiếp diễn: Our grandparents <b>are watching</b> TV in the living room now.','g-continuous',[['are watching']])
+  ]}
+ ]},
+
+{id:'open',name:'V. Writing · Task 6',short:'Trả lời về bản thân',tag:'Writing',selfCheck:true,
+ intro:'Phần này trả lời về chính em nên không có một đáp án duy nhất. Hãy viết câu đầy đủ, bấm "Kiểm tra" để máy soi các lỗi cơ bản và xem câu mẫu.',
+ groups:[{h:'Task 6. Answer the questions about yourself.',items:[
+  {t:'open',q:'1. What do you usually do at break time?',re:/\b(usually|often|always|sometimes)\b/i,reHint:'có trạng từ chỉ tần suất (usually, often...)',model:'I usually play games with my classmates in the schoolyard.'},
+  {t:'open',q:'2. What is there in your pencil case?',re:/\b(there is|there are|there\'s)\b/i,reHint:'có mẫu There is / There are',model:'There are two pens, a ruler and a rubber in my pencil case.'},
+  {t:'open',q:'3. Is there a dishwasher in your kitchen?',re:/\b(yes|no)\b.*\bthere\b/i,reHint:'trả lời dạng Yes, there is. / No, there isn\'t.',model:"No, there isn't. / Yes, there is."},
+  {t:'open',q:'4. Where is your bed in your bedroom?',re:/\b(in|on|under|next to|behind|in front of|between|in the middle of)\b/i,reHint:'có giới từ chỉ vị trí (next to, behind...)',model:'My bed is next to the window.'},
+  {t:'open',q:'5. What is your best friend like?',re:/\b(is|has)\b/i,reHint:'có is/has để tả tính cách hoặc ngoại hình',model:'She is kind and funny. She has long black hair.'}
+ ]}]},
+
+{id:'listen',name:'VI. Listening',short:'Nghe (tự luyện)',tag:'Listening',selfCheck:true,
+ intro:'Phần nghe do cô giáo mở file riêng, đề cương không có bản ghi âm hay đáp án. Em ghi câu trả lời ở đây khi nghe, sau đó đối chiếu với đáp án của cô.',
+ groups:[
+  {h:'Task 1. Listen to Tam and Mai talking about their new school. Tick T (True) or F (False).',items:[
+   {t:'ltf',q:'1. Mai is from Class 6A.'},{t:'ltf',q:'2. Mai and Tam like their new school.'},{t:'ltf',q:'3. Mai says the library is a cool place.'},{t:'ltf',q:"4. Tam doesn't play football."}]},
+  {h:'Task 2. Listen to Lan talking about her new friends at school and fill in each blank with ONE word. You will listen TWICE.',items:[
+   {t:'lfill',q:'1. Lan is studying in a/an ___ secondary school.'},
+   {t:'lfill',q:'2. Mary has ___ hair and brown eyes.'},
+   {t:'lfill',q:'3. Mary is a member of the ___ team at school.'},
+   {t:'lfill',q:'4. Yoo Mi is able to speak both ___ English and ___.'}]}
+ ]}
+];
+(function(){
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const strip=h=>String(h).replace(/<[^>]+>/g,'');
+const memStore={};
+function sget(k,d){try{const v=localStorage.getItem('ta6-'+k);return v?JSON.parse(v):d}catch(e){return memStore[k]!==undefined?memStore[k]:d}}
+function sset(k,v){memStore[k]=v;try{localStorage.setItem('ta6-'+k,JSON.stringify(v))}catch(e){}}
+function speak(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=.85;window.speechSynthesis.cancel();window.speechSynthesis.speak(u)}catch(e){}}
+const reduce=()=>{try{return window.matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){return false}};
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+/* ---------- routing ---------- */
+const TABS=['bat-dau','tu-vung','ngu-phap','lam-bai'];
+function show(t){
+  TABS.forEach(x=>{$('#tab-'+x).hidden=(x!==t)});
+  $$('.tabs a').forEach(a=>{if(a.dataset.tab===t)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  try{window.scrollTo(0,0)}catch(e){}
+}
+function route(){let h=(location.hash||'').replace('#','');if(TABS.indexOf(h)<0)h='bat-dau';show(h)}
+function go(t){if(location.hash==='#'+t)show(t);else location.hash='#'+t}
+
+/* ---------- data prep ---------- */
+const FLAT=[];
+VOCAB.forEach(g=>g.words.forEach(w=>FLAT.push({en:w[0],ipa:w[1],pos:w[2],vi:w[3],ex:w[4],exvi:w[5],unit:g.unit,topic:g.topic})));
+let known=sget('known',[]);
+function isKnown(en){return known.indexOf(en)>=0}
+function setKnown(en,v){known=known.filter(x=>x!==en);if(v)known.push(en);sset('known',known)}
+function countGraded(){let n=0;EX.forEach(s=>{if(s.selfCheck)return;s.groups.forEach(g=>{(g.sub?g.sub:[g]).forEach(x=>{n+=x.items.length})})});return n}
+const TOTAL_Q=countGraded();
+
+/* ---------- Bắt đầu ---------- */
+function renderStart(){
+  const el=$('#tab-bat-dau');
+  el.innerHTML=`
+  <div class="hero">
+    <span class="tag">Đề cương ôn tập giữa học kỳ I · Năm học 2026–2027</span>
+    <h1>Ôn giữa kỳ <mark>Tiếng Anh 6</mark></h1>
+    <p>Bám sát đề cương Global Success, Unit 1, 2, 3. Học từ vựng bằng thẻ lật, đọc bài giảng ngữ pháp dễ hiểu, rồi làm lại <b>toàn bộ bài trong đề cương</b> và để máy chấm, giải thích từng câu.</p>
+  </div>
+  <div class="steps">
+    <button class="step" type="button" data-go="tu-vung"><span class="tag">Bước 1</span><span class="big">${FLAT.length}</span><b>Từ vựng</b><span>Bấm vào thẻ để lật, nghe phát âm và đố nhanh.</span></button>
+    <button class="step" type="button" data-go="ngu-phap"><span class="tag">Bước 2</span><span class="big">${GRAMMAR.length}</span><b>Bài giảng ngữ pháp</b><span>Công thức, ví dụ, mẹo và lỗi hay gặp.</span></button>
+    <button class="step" type="button" data-go="lam-bai"><span class="tag">Bước 3</span><span class="big">${TOTAL_Q}</span><b>Câu bài tập</b><span>Làm trực tiếp, nộp bài, máy chấm và giảng lại.</span></button>
+  </div>
+  <div class="card">
+    <h3>Cấu trúc đề kiểm tra</h3>
+    <p class="sub">Unit 1, 2, 3 · Thời gian làm bài 60 phút · 38 câu · 10 điểm</p>
+    <div class="tbl"><table>
+      <tr><th>Phần</th><th>Nội dung</th><th class="n">Số câu</th><th class="n">Điểm</th></tr>
+      <tr><td><b>Listening</b></td><td>True/False (4 câu) và Gap-filling (4 câu). Chủ đề Unit 1, 2, 3.</td><td class="n">8</td><td class="n">2.0</td></tr>
+      <tr><td><b>Language Focus</b></td><td>Choose the best answer (10 câu: phát âm /ɑː/ và /ʌ/, từ vựng Unit 1–3, giới từ, sở hữu cách, giao tiếp). Word form (2 câu). Verb tense (2 câu: hiện tại đơn, hiện tại tiếp diễn).</td><td class="n">14</td><td class="n">3.5</td></tr>
+      <tr><td><b>Reading</b></td><td>Cloze test: 4 từ cho sẵn, điền 4 chỗ trống. Read the passage: True/False (4 câu), 1 câu hỏi Wh, 1 câu hỏi Yes/No.</td><td class="n">10</td><td class="n">2.5</td></tr>
+      <tr><td><b>Writing</b></td><td>Viết lại câu dùng sở hữu cách. There is/are → have/has. Đặt trạng từ chỉ tần suất. Viết lại câu dùng giới từ chỉ vị trí. Hoàn thành câu từ gợi ý. Trả lời câu hỏi về Unit 1, 2, 3.</td><td class="n">6</td><td class="n">2.0</td></tr>
+      <tr><th colspan="2">Tổng</th><th class="n">38</th><th class="n">10.0</th></tr>
+    </table></div>
+  </div>
+  <div class="card">
+    <h3>Gợi ý lịch ôn 5 buổi</h3>
+    <ol class="plan">
+      <li><b>Buổi 1, Unit 1:</b> thẻ từ trường học, bài Hiện tại đơn và Trạng từ chỉ tần suất, làm Verb tense câu 2, 3, 5, 7, 9.</li>
+      <li><b>Buổi 2, Unit 2:</b> thẻ từ ngôi nhà, bài Sở hữu cách, Giới từ, There is/are → have/has, làm câu 11–20 và 31–35.</li>
+      <li><b>Buổi 3, Unit 3:</b> thẻ từ ngoại hình và tính cách, bài Hiện tại tiếp diễn, làm câu 21–30 và Word form.</li>
+      <li><b>Buổi 4:</b> bài Phát âm, Giao tiếp, làm cả phần Choose the best answer và Verb tense.</li>
+      <li><b>Buổi 5:</b> làm Reading (cả ba đoạn) và Writing, xem lại các câu sai.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h3>Mẹo làm bài ngày thi</h3>
+    <ul class="exs">
+      <li>Đọc lướt cả câu trước khi chọn đáp án, chú ý từ khóa như <i>now</i>, <i>every day</i>, <i>Look!</i>.</li>
+      <li>Câu nào chưa chắc, đánh dấu rồi làm tiếp, quay lại sau khi xong phần còn lại.</li>
+      <li>Viết hoa chữ cái đầu câu và thêm dấu chấm hoặc dấu hỏi cuối câu ở phần Writing.</li>
+      <li>Dành 5 phút cuối để soát lại chính tả và chữ <i>-s / -es</i>.</li>
+    </ul>
+  </div>`;
+}
+
+/* ---------- Từ vựng ---------- */
+const V={unit:'all',topic:'all',only:false,mode:'cards',quiz:null,dir:'en2vi'};
+function vFiltered(){return FLAT.filter(w=>(V.unit==='all'||w.unit===+V.unit)&&(V.topic==='all'||w.topic===V.topic)&&(!V.only||!isKnown(w.en)))}
+function topicsOf(u){const s=[];FLAT.forEach(w=>{if((u==='all'||w.unit===+u)&&s.indexOf(w.topic)<0)s.push(w.topic)});return s}
+const ICON='<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+function tileHTML(w){
+  const k=isKnown(w.en);
+  const en=w.en.replace(/"/g,'&quot;');
+  return `<article class="wcard u${w.unit}${k?' known':''}">
+    <div class="wtop"><span class="wunit">Unit ${w.unit}</span><span class="pos">${w.pos}</span></div>
+    <div class="wmain"><div class="wword"><div class="en">${w.en}</div><div class="ipa">${w.ipa}</div></div>
+    <button type="button" class="spk" data-act="speak" data-t="${en}" aria-label="Nghe phát âm ${en}">${ICON}</button></div>
+    <div class="vi">${w.vi}</div>
+    <div class="wex"><div class="exen">${w.ex}</div><div class="exvi">${w.exvi}</div></div>
+    <button type="button" class="kn${k?' on':''}" data-act="known" data-en="${en}" aria-pressed="${k}">${k?'✓ Đã thuộc':'Đánh dấu đã thuộc'}</button></article>`;
+}
+function listHTML(list){
+  const tp=[];list.forEach(w=>{if(tp.indexOf(w.unit+'|'+w.topic)<0)tp.push(w.unit+'|'+w.topic)});
+  return tp.map(key=>{const [u,t]=key.split('|');const ws=list.filter(w=>w.unit===+u&&w.topic===t);
+    return `<h3 class="topic">Unit ${u} · ${t}</h3><div class="tbl card" style="padding:0"><table class="vt"><tr><th>Từ</th><th>Phiên âm</th><th>Loại</th><th>Nghĩa</th><th class="n">Nghe</th></tr>${ws.map(w=>`<tr><td><b>${w.en}</b></td><td class="ipa">${w.ipa}</td><td>${w.pos}</td><td>${w.vi}</td><td class="n"><button type="button" class="spk sm" data-act="speak" data-t="${w.en.replace(/"/g,'&quot;')}" aria-label="Nghe ${w.en.replace(/"/g,'')}">${ICON}</button></td></tr>`).join('')}</table></div>`}).join('');
+}
+function renderVocab(){
+  const el=$('#tab-tu-vung');
+  const list=vFiltered();
+  const done=FLAT.filter(w=>isKnown(w.en)).length;
+  let body='';
+  if(V.mode==='list'){body=list.length?listHTML(list):'<div class="card"><p><b>Không có từ nào ở bộ lọc này.</b></p></div>'}
+  else if(V.mode==='cards'){
+    if(!list.length)body='<div class="card"><p><b>Không có từ nào ở bộ lọc này.</b> Em đã thuộc hết rồi, hoặc hãy đổi bộ lọc.</p></div>';
+    else{
+      const tp=[];list.forEach(w=>{if(tp.indexOf(w.unit+'|'+w.topic)<0)tp.push(w.unit+'|'+w.topic)});
+      body=tp.map(key=>{const [u,t]=key.split('|');const ws=list.filter(w=>w.unit===+u&&w.topic===t);
+        return `<h3 class="topic">Unit ${u} · ${t}</h3><div class="vgrid">${ws.map(tileHTML).join('')}</div>`}).join('');
+    }
+  }else body=quizHTML();
+  const units=[['all','Tất cả'],['1','Unit 1'],['2','Unit 2'],['3','Unit 3']];
+  el.innerHTML=`
+  <h2 class="sec">Từ vựng Unit 1–3</h2>
+  <p class="sub">Nghĩa và ví dụ hiện sẵn trên mỗi thẻ. Bấm nút loa để nghe phát âm, bấm "Đánh dấu đã thuộc" khi đã nhớ từ.</p>
+  <div class="card filters">
+    <div class="row" role="group" aria-label="Chọn Unit">${units.map(u=>`<button type="button" class="chip" data-act="unit" data-v="${u[0]}" aria-pressed="${V.unit===u[0]}">${u[1]}</button>`).join('')}</div>
+    <div class="row" role="group" aria-label="Chọn chủ đề"><button type="button" class="chip" data-act="topic" data-v="all" aria-pressed="${V.topic==='all'}">Mọi chủ đề</button>${topicsOf(V.unit).map(t=>`<button type="button" class="chip" data-act="topic" data-v="${t}" aria-pressed="${V.topic===t}">${t}</button>`).join('')}</div>
+    <div class="row">
+      <button type="button" class="chip" data-act="mode" data-v="cards" aria-pressed="${V.mode==='cards'}">Thẻ từ</button>
+      <button type="button" class="chip" data-act="mode" data-v="list" aria-pressed="${V.mode==='list'}">Bảng từ</button>
+      <button type="button" class="chip" data-act="mode" data-v="quiz" aria-pressed="${V.mode==='quiz'}">Đố nhanh</button>
+      <button type="button" class="chip" data-act="only" aria-pressed="${V.only}">Chỉ từ chưa thuộc</button>
+      <span class="sub">Đã thuộc ${done}/${FLAT.length} từ · đang hiển thị ${list.length} từ</span>
+    </div>
+    <div class="bar" aria-hidden="true"><i style="width:${Math.round(done/FLAT.length*100)}%"></i></div>
+  </div>
+  ${body}`;
+}
+function startQuiz(){
+  let pool=vFiltered();if(pool.length<4)pool=FLAT.filter(w=>V.unit==='all'||w.unit===+V.unit);if(pool.length<4)pool=FLAT;
+  const list=shuffle(pool).slice(0,10);
+  V.quiz={list:list.map(w=>{
+    const others=shuffle(FLAT.filter(x=>x.en!==w.en&&x.vi!==w.vi)).slice(0,3);
+    return {w:w,opts:shuffle([w].concat(others)),picked:-1};
+  }),i:0,score:0,wrong:[],done:false};
+}
+function quizHTML(){
+  if(!V.quiz)startQuiz();
+  const q=V.quiz;
+  const dirBtns=`<div class="row"><button type="button" class="chip" data-act="dir" data-v="en2vi" aria-pressed="${V.dir==='en2vi'}">Anh → Việt</button><button type="button" class="chip" data-act="dir" data-v="vi2en" aria-pressed="${V.dir==='vi2en'}">Việt → Anh</button></div>`;
+  if(q.done){
+    const pct=Math.round(q.score/q.list.length*100);
+    return `<div class="card"><h3>Kết quả đố nhanh</h3><p class="score" style="font-family:var(--f-display);font-size:34px;margin:6px 0">${q.score}/${q.list.length}</p>
+    <p>${pct>=80?'Rất tốt! Em nhớ từ khá chắc rồi.':pct>=50?'Khá ổn. Ôn lại các từ sai bên dưới nhé.':'Đừng lo, lật thẻ ôn thêm rồi đố lại nhé.'}</p>
+    ${q.wrong.length?`<h4>Các từ cần ôn lại</h4><ul class="exs">${q.wrong.map(w=>`<li><b>${w.en}</b> ${w.ipa} = ${w.vi}</li>`).join('')}</ul>`:''}
+    <div class="actions"><button type="button" class="btn" data-act="qrestart">Đố lại</button>${q.wrong.length?'<button type="button" class="btn ghost" data-act="qreview">Xem lại thẻ các từ sai</button>':''}</div></div>`;
+  }
+  const cur=q.list[q.i];const w=cur.w;
+  const prompt=V.dir==='en2vi'?`<div class="en">${w.en}</div><div class="ipa">${w.ipa}</div>`:`<div class="vi">${w.vi}</div><div class="hint">Chọn từ tiếng Anh đúng</div>`;
+  const opts=cur.opts.map((o,k)=>{
+    const label=V.dir==='en2vi'?o.vi:o.en;
+    let cls='qz-opt';if(cur.picked>=0){if(o.en===w.en)cls+=' ok';else if(cur.picked===k)cls+=' no'}
+    return `<button type="button" class="${cls}" data-act="qpick" data-k="${k}" ${cur.picked>=0?'disabled':''}>${label}</button>`;
+  }).join('');
+  return `<div class="card"><div class="row" style="justify-content:space-between"><span class="tag">Câu ${q.i+1}/${q.list.length} · Đúng ${q.score}</span>${dirBtns}</div>
+  <div style="text-align:center;margin:14px 0">${prompt}</div><div class="qz-opts">${opts}</div>
+  ${cur.picked>=0?`<div class="actions"><button type="button" class="btn" data-act="qnext">${q.i+1<q.list.length?'Câu tiếp':'Xem kết quả'}</button><button type="button" class="btn ghost" data-act="speak" data-t="${w.en}">Nghe</button></div><p class="exen" style="margin-top:8px">${w.ex}</p>`:''}</div>`;
+}
+
+/* ---------- Ngữ pháp ---------- */
+let curG=sget('gcur',GRAMMAR[0].id);
+if(!GRAMMAR.some(g=>g.id===curG))curG=GRAMMAR[0].id;
+const EXLABEL={mcq:'Choose the best answer',word:'Word form',verb:'Verb tense',read:'Reading',write:'Writing'};
+function renderGrammar(){
+  const el=$('#tab-ngu-phap');
+  const idx=GRAMMAR.findIndex(g=>g.id===curG);const g=GRAMMAR[idx];
+  el.innerHTML=`
+  <h2 class="sec">Bài giảng ngữ pháp</h2>
+  <p class="sub">Mỗi bài có công thức, ví dụ lấy từ đề cương, mẹo nhớ và lỗi hay gặp.</p>
+  <div class="gwrap">
+    <nav class="gnav" aria-label="Danh sách bài giảng">${GRAMMAR.map(x=>`<button type="button" data-act="gpick" data-id="${x.id}" aria-current="${x.id===curG}">${x.title}<small>${x.unit}</small></button>`).join('')}</nav>
+    <article class="card gart">
+      <span class="tag">${g.unit}</span>
+      <h3>${g.title}</h3>
+      ${g.html}
+      <div class="actions"><button type="button" class="btn" data-act="gopractice" data-sec="${g.ex}">Làm bài tập phần này</button></div>
+      <div class="nextprev">
+        ${idx>0?`<button type="button" class="btn ghost" data-act="gpick" data-id="${GRAMMAR[idx-1].id}">← ${GRAMMAR[idx-1].title}</button>`:'<span></span>'}
+        ${idx<GRAMMAR.length-1?`<button type="button" class="btn ghost" data-act="gpick" data-id="${GRAMMAR[idx+1].id}">${GRAMMAR[idx+1].title} →</button>`:''}
+      </div>
+    </article>
+  </div>`;
+}
+
+/* ---------- Làm bài ---------- */
+let curSec=sget('sec','mcq');
+if(!EX.some(s=>s.id===curSec))curSec='mcq';
+let best=sget('best',{});
+const SECBY={};EX.forEach(s=>SECBY[s.id]=s);
+
+function norm(s){
+  s=String(s||'').toLowerCase().replace(/[’‘`]/g,"'");
+  s=s.replace(/(\w)n't\b/g,'$1 not');
+  s=s.replace(/[^a-z0-9'\s]/g,' ').replace(/\s+/g,' ').trim();
+  return s;
+}
+function fillBlanks(q){
+  let n=0;
+  return q.replace(/___/g,()=>`<input type="text" class="mini" data-b="${n++}" aria-label="chỗ trống ${n}" autocomplete="off" autocapitalize="off" spellcheck="false">`);
+}
+function itemHTML(sec,key,it,num){
+  let body='';
+  if(it.t==='mcq'){
+    body=`<div class="q-text">${it.q}</div><div class="choices">${it.o.map((o,k)=>`<label class="choice"><input type="radio" name="${key}" value="${k}"><span><b>${'ABCD'[k]}.</b> ${o}</span></label>`).join('')}</div>`;
+  }else if(it.t==='tf'){
+    body=`<div class="q-text">${it.q}</div><div class="tfs"><label class="choice"><input type="radio" name="${key}" value="T"><span><b>T</b> (True)</span></label><label class="choice"><input type="radio" name="${key}" value="F"><span><b>F</b> (False)</span></label></div>`;
+  }else if(it.t==='ltf'){
+    body=`<div class="q-text">${it.q}</div><div class="tfs"><label class="choice"><input type="radio" name="${key}" value="T"><span><b>T</b> (True)</span></label><label class="choice"><input type="radio" name="${key}" value="F"><span><b>F</b> (False)</span></label></div>`;
+  }else if(it.t==='lfill'){
+    body=`<div class="q-text">${fillBlanks(it.q)}</div>`;
+  }else if(it.t==='open'){
+    body=`<div class="q-text">${it.q}</div><textarea class="txt" id="${key}" rows="2" autocomplete="off" spellcheck="false" aria-label="Câu trả lời"></textarea>`;
+  }else{
+    body=`<div class="q-text">${it.q}</div><input type="text" class="txt" id="${key}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Câu trả lời">`;
+  }
+  return `<div class="q" id="q-${key}" data-key="${key}"><span class="num">${num}</span><div class="q-body">${body}<div class="fb" hidden></div></div></div>`;
+}
+function passageHTML(key,g){
+  let html=g.passage.replace(/\[\[(\d)\]\]/g,(m,n)=>{
+    const opts=['<option value="">...</option>'].concat((g.box||[]).map(w=>`<option value="${w}">${w}</option>`));
+    return `<select class="gap" id="${key}_${+n-1}" aria-label="chỗ trống ${n}">${opts.join('')}</select><sup>(${n})</sup>`;
+  });
+  return `<div class="passage">${html}</div>`;
+}
+function groupHTML(sec,gi,g){
+  const key0=`${sec.id}_${gi}`;
+  let out=`<div class="group"><h3>${g.h}</h3>`;
+  if(g.box)out+=`<div class="box" aria-label="Từ cho sẵn">${shuffle(g.box).map(w=>`<span>${w}</span>`).join('')}</div>`;
+  if(g.passage&&!g.sub)out+=passageHTML(key0,g);
+  if(g.passage&&g.sub)out+=`<div class="passage">${g.passage}</div>`;
+  if(g.sub){
+    g.sub.forEach((sg,si)=>{
+      out+=`<h3 style="margin-top:18px">${sg.h}</h3>`+sg.items.map((it,ii)=>itemHTML(sec,`${key0}_${si}_${ii}`,it,ii+1)).join('');
+    });
+  }else if(g.items&&g.items[0].t==='gap'){
+    out+=`<div id="gapfb-${key0}"></div>`;
+  }else if(g.items){
+    out+=g.items.map((it,ii)=>itemHTML(sec,`${key0}_${ii}`,it,it.n!==undefined?it.n:ii+1)).join('');
+  }
+  return out+'</div>';
+}
+function secHTML(sec){
+  const graded=!sec.selfCheck;
+  return `<div class="card"><span class="tag">${sec.tag}</span><h3>${sec.name}</h3><p class="sub">${sec.intro}</p></div>
+  <div class="summary" data-summary hidden></div>
+  ${sec.groups.map((g,gi)=>groupHTML(sec,gi,g)).join('')}
+  <div class="actions">${sec.id==='listen'?'':`<button type="button" class="btn" data-act="check" data-sec="${sec.id}">${graded?'Nộp bài':'Kiểm tra'}</button>`}<button type="button" class="btn ghost" data-act="reset" data-sec="${sec.id}">Làm lại</button></div>`;
+}
+function renderPractice(){
+  const el=$('#tab-lam-bai');
+  el.innerHTML=`<h2 class="sec">Làm bài tập</h2>
+  <p class="sub">Toàn bộ bài trong đề cương, giữ nguyên nội dung. Nộp bài là máy chấm ngay, kèm đáp án và giải thích.</p>
+  <div class="card"><div class="row" style="justify-content:space-between"><div><b>Tiến độ</b> <span class="sub" id="overall"></span></div></div><div class="bar" style="margin-top:8px" aria-hidden="true"><i id="overallbar" style="width:0%"></i></div></div>
+  <div class="pnav" role="group" aria-label="Chọn phần bài tập" id="pnav"></div>
+  ${EX.map(s=>`<div class="sec-pane" data-pane="${s.id}" ${s.id===curSec?'':'hidden'}>${secHTML(s)}</div>`).join('')}`;
+  updatePnav();
+}
+function updatePnav(){
+  const nav=$('#pnav');if(!nav)return;
+  nav.innerHTML=EX.map(s=>{
+    const b=best[s.id];
+    const sub=s.selfCheck?'tự luyện':(b?`tốt nhất ${b.s}/${b.t}`:'chưa làm');
+    return `<button type="button" class="${b?'done':''}" data-act="sec" data-sec="${s.id}" aria-current="${s.id===curSec}">${s.name}<small>${s.short} · ${sub}</small></button>`;
+  }).join('');
+  let s=0,t=0;EX.forEach(x=>{if(x.selfCheck)return;const b=best[x.id];if(b)s+=b.s;});
+  $('#overall').textContent=`· điểm tốt nhất mỗi phần: ${s}/${TOTAL_Q} câu`;
+  $('#overallbar').style.width=Math.round(s/TOTAL_Q*100)+'%';
+}
+function setSec(id){
+  curSec=id;sset('sec',id);
+  $$('.sec-pane').forEach(p=>{p.hidden=(p.dataset.pane!==id)});
+  updatePnav();
+}
+
+function gradeText(it,val){
+  const v=norm(val);
+  if(!v)return {s:0,blank:true};
+  const acc=it.acc.map(norm);
+  if(acc.indexOf(v)>=0)return {s:1};
+  if(it.kw&&it.kw.every(g=>g.some(k=>v.indexOf(norm(k))>=0)))return {s:.5};
+  return {s:0};
+}
+function feedback(box,res,it,ansText){
+  const st=res.blank?['b','Chưa trả lời']:res.s===1?['g','Chính xác!']:res.s>0?['p','Gần đúng (được 0,5 điểm)']:['b','Chưa đúng'];
+  let h=`<div class="st ${st[0]}">${res.s===1?'✓':res.s>0?'~':'✗'} ${st[1]}</div>`;
+  if(res.s<1&&ansText)h+=`<div class="ans"><b>Đáp án:</b> ${ansText}</div>`;
+  if(res.s>0&&res.s<1)h+=`<div class="ans">Đúng ý rồi, nhưng chưa đủ câu hoặc chưa đúng dạng đáp án mẫu.</div>`;
+  if(it.e)h+=`<div class="why"><b>Giải thích:</b> ${it.e}</div>`;
+  if(it.g&&res.s<1){const gg=GRAMMAR.find(x=>x.id===it.g);if(gg)h+=`<div><button type="button" class="lnk" data-act="gopick" data-id="${gg.id}">Xem lại bài: ${gg.title}</button></div>`}
+  box.innerHTML=h;box.hidden=false;
+}
+function markQ(q,res){q.classList.remove('ok2','bad2','part2');q.classList.add(res.s===1?'ok2':res.s>0?'part2':'bad2')}
+function lockPane(pane){$$('input,select,textarea',pane).forEach(x=>{x.disabled=true})}
+
+function checkSec(id){
+  const sec=SECBY[id];const pane=$(`.sec-pane[data-pane="${id}"]`);
+  if(pane.dataset.locked)return;
+  let score=0,total=0;const wrongG={};
+  const tally=(res,it)=>{total++;score+=res.s;if(res.s<1&&it.g)wrongG[it.g]=1};
+  const doItem=(key,it)=>{
+    const q=$('#q-'+key,pane);if(!q)return;const box=$('.fb',q);let res,ans='';
+    if(it.t==='mcq'){
+      const r=$(`input[name="${key}"]:checked`,q);const v=r?+r.value:-1;
+      res={s:v===it.a?1:0,blank:v<0};ans=`${'ABCD'[it.a]}. ${strip(it.o[it.a])}`;
+    }else if(it.t==='tf'){
+      const r=$(`input[name="${key}"]:checked`,q);const v=r?r.value:'';
+      res={s:(v==='T')===it.a&&v?1:0,blank:!v};ans=it.a?'T (True)':'F (False)';
+    }else if(it.t==='text'){
+      res=gradeText(it,$('#'+key,q).value);
+      ans=esc(sec.id==='write'?pretty(it.acc[0]):it.acc[0]);
+    }
+    markQ(q,res);feedback(box,res,it,ans);tally(res,it);
+  };
+  sec.groups.forEach((g,gi)=>{
+    const key0=`${sec.id}_${gi}`;
+    if(g.sub){g.sub.forEach((sg,si)=>sg.items.forEach((it,ii)=>doItem(`${key0}_${si}_${ii}`,it)))}
+    else if(g.items[0].t==='gap'){
+      const wrap=$('#gapfb-'+key0,pane);let html='<ul class="exs">';
+      g.items.forEach((it,ii)=>{
+        const sel=$('#'+key0+'_'+ii,pane);const v=sel?sel.value:'';const ok=v===it.a;
+        const res={s:ok?1:0,blank:!v};tally(res,it);
+        if(sel){sel.style.borderColor=ok?'var(--good)':'var(--bad)';sel.style.background=ok?'var(--good-bg)':'var(--bad-bg)'}
+        html+=`<li><span class="${ok?'ok':'no'}">(${ii+1}) ${ok?'✓ Chính xác':(v?'✗ Chưa đúng':'✗ Chưa trả lời')}</span>${ok?'':` · Đáp án: <b>${it.a}</b>`} · ${it.e}</li>`;
+      });
+      wrap.innerHTML=html+'</ul>';
+    }else g.items.forEach((it,ii)=>doItem(`${key0}_${ii}`,it));
+  });
+  lockPane(pane);pane.dataset.locked='1';
+  const pct=total?Math.round(score/total*100):0;
+  const msg=pct>=90?'Xuất sắc! Em nắm rất chắc phần này.':pct>=70?'Khá tốt! Xem lại vài câu sai là hoàn hảo.':pct>=50?'Tạm ổn. Đọc lại bài giảng rồi làm lại nhé.':'Đừng nản. Xem bài giảng bên dưới rồi bấm "Làm lại".';
+  const links=Object.keys(wrongG).map(k=>{const gg=GRAMMAR.find(x=>x.id===k);return gg?`<button type="button" class="chip" data-act="gopick" data-id="${gg.id}">Ôn lại: ${gg.title}</button>`:''}).join('');
+  const sm=$('[data-summary]',pane);
+  sm.innerHTML=`<div class="row" style="justify-content:space-between"><div><div class="score">${String(score).replace('.',',')}/${total}</div><div class="sub">${pct}% · quy đổi ${(Math.round(score/total*100)/10).toFixed(1).replace('.',',')} điểm</div></div><div style="max-width:40ch"><b>${msg}</b></div></div>${links?`<div class="row" style="margin-top:10px">${links}</div>`:''}`;
+  sm.hidden=false;
+  if(!best[id]||score>best[id].s)best[id]={s:score,t:total};
+  sset('best',best);updatePnav();
+  try{sm.scrollIntoView({behavior:reduce()?'auto':'smooth',block:'start'})}catch(e){}
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function pretty(s){
+  s=s.replace(/\b(nam|lan|linh|mai)\b/g,m=>m[0].toUpperCase()+m.slice(1)).replace(/\btv\b/g,'TV');
+  s=s.replace(/^look /,'Look! ');
+  s=s.replace(/^./,c=>c.toUpperCase()).replace(/^(Look! )(.)/,(m,a,b)=>a+b.toUpperCase());
+  return s+(/^how many/i.test(s)?'?':'.');
+}
+function checkOpen(){
+  const sec=SECBY.open;const pane=$('.sec-pane[data-pane="open"]');
+  sec.groups[0].items.forEach((it,ii)=>{
+    const key=`open_0_${ii}`;const q=$('#q-'+key,pane);const v=$('#'+key,q).value.trim();const box=$('.fb',q);
+    const words=v.split(/\s+/).filter(Boolean).length;
+    const checks=[
+      [words>=3,'viết câu đầy đủ (từ 3 từ trở lên)'],
+      [/^[A-Z]/.test(v),'viết hoa chữ cái đầu câu'],
+      [/[.!?]$/.test(v),'có dấu chấm hoặc dấu hỏi ở cuối câu'],
+      [it.re.test(v),it.reHint]
+    ];
+    const okAll=v&&checks.every(c=>c[0]);
+    q.classList.remove('ok2','bad2','part2');q.classList.add(!v?'bad2':okAll?'ok2':'part2');
+    box.innerHTML=(v?`<ul class="chk">${checks.map(c=>`<li class="${c[0]?'':'x'}">${c[1]}</li>`).join('')}</ul>`:'<div class="st b">✗ Chưa trả lời</div>')+`<div class="ans"><b>Câu mẫu:</b> ${it.model}</div>`;
+    box.hidden=false;
+  });
+  const sm=$('[data-summary]',pane);sm.innerHTML='<b>Đã kiểm tra các lỗi cơ bản.</b> Câu trả lời về bản thân có thể khác câu mẫu mà vẫn đúng, miễn là đủ câu và đúng ngữ pháp. Nhờ cô giáo xem thêm nhé.';sm.hidden=false;
+}
+function resetSec(id){
+  const pane=$(`.sec-pane[data-pane="${id}"]`);const sec=SECBY[id];
+  pane.innerHTML=secHTML(sec);delete pane.dataset.locked;
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-act],[data-go]');if(!t)return;
+  if(t.dataset.go){go(t.dataset.go);return}
+  const a=t.dataset.act;
+  if(a==='speak'){e.stopPropagation();speak(t.dataset.t);return}
+  if(a==='flip'){const on=t.classList.toggle('flipped');t.setAttribute('aria-pressed',on);return}
+  if(a==='known'){e.stopPropagation();const en=t.dataset.en;setKnown(en,!isKnown(en));
+    if(V.only&&isKnown(en)){renderVocab();return}
+    const card=t.closest('.wcard');const k=isKnown(en);
+    t.classList.toggle('on',k);t.textContent=k?'✓ Đã thuộc':'Đánh dấu đã thuộc';t.setAttribute('aria-pressed',k);
+    if(card)card.classList.toggle('known',k);
+    const done=FLAT.filter(w=>isKnown(w.en)).length;const sp=$('#tab-tu-vung .filters .sub');if(sp)sp.textContent=`Đã thuộc ${done}/${FLAT.length} từ`;const bar=$('#tab-tu-vung .filters .bar>i');if(bar)bar.style.width=Math.round(done/FLAT.length*100)+'%';
+    return}
+  if(a==='unit'){V.unit=t.dataset.v;V.topic='all';V.quiz=null;renderVocab();return}
+  if(a==='topic'){V.topic=t.dataset.v;V.quiz=null;renderVocab();return}
+  if(a==='only'){V.only=!V.only;V.quiz=null;renderVocab();return}
+  if(a==='mode'){V.mode=t.dataset.v;V.quiz=null;renderVocab();return}
+  if(a==='dir'){V.dir=t.dataset.v;renderVocab();return}
+  if(a==='qpick'){const cur=V.quiz.list[V.quiz.i];if(cur.picked>=0)return;cur.picked=+t.dataset.k;
+    const ok=cur.opts[cur.picked].en===cur.w.en;if(ok)V.quiz.score++;else{V.quiz.wrong.push(cur.w);setKnown(cur.w.en,false)}
+    renderVocab();return}
+  if(a==='qnext'){if(V.quiz.i+1<V.quiz.list.length)V.quiz.i++;else V.quiz.done=true;renderVocab();return}
+  if(a==='qrestart'){V.quiz=null;renderVocab();return}
+  if(a==='qreview'){V.mode='cards';V.only=true;V.quiz=null;renderVocab();return}
+  if(a==='gpick'){curG=t.dataset.id;sset('gcur',curG);renderGrammar();try{window.scrollTo(0,0)}catch(x){}return}
+  if(a==='gopick'){curG=t.dataset.id;sset('gcur',curG);renderGrammar();go('ngu-phap');return}
+  if(a==='gopractice'){const id=t.dataset.sec;if(SECBY[id])setSec(id);go('lam-bai');return}
+  if(a==='sec'){setSec(t.dataset.sec);return}
+  if(a==='check'){if(t.dataset.sec==='open')checkOpen();else checkSec(t.dataset.sec);return}
+  if(a==='reset'){resetSec(t.dataset.sec);return}
+});
+document.addEventListener('keydown',e=>{
+  if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('.tile[data-act="flip"]')){e.preventDefault();e.target.click()}
+});
+window.addEventListener('hashchange',route);
+
+renderStart();renderVocab();renderGrammar();renderPractice();route();
+})();
+</script>
+
+</body></html>
