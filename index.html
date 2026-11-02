@@ -290,8 +290,8 @@ table.vt td{vertical-align:middle}
       <a href="#tu-vung" data-tab="tu-vung">Từ vựng</a>
       <a href="#ngu-phap" data-tab="ngu-phap">Ngữ pháp</a>
       <a href="#lam-bai" data-tab="lam-bai">Làm bài</a>
-      <a href="#de-cuong-1" data-tab="de-cuong-1">Đề cương 1</a>
-      <a href="#de-cuong-2" data-tab="de-cuong-2">Đề cương 2</a>
+      <a href="#de-cuong-1" data-tab="de-cuong-1">Bài làm đề cương 1</a>
+      <a href="#de-cuong-2" data-tab="de-cuong-2">Bài làm đề cương 2</a>
     </nav>
   </div>
 </header>
@@ -1014,9 +1014,9 @@ function renderStart(){
     <button class="step" type="button" data-go="lam-bai"><span class="tag">Bước 3</span><span class="big">${TOTAL_Q}</span><b>Câu bài tập</b><span>Làm trực tiếp, nộp bài, máy chấm và giảng lại.</span></button>
   </div>
   <div class="card">
-    <h3>Hai đề cương của nhà trường</h3>
+    <h3>Bài làm hai đề cương mới</h3>
     <p class="sub">Giữ nguyên nội dung hai file đề cương, làm trực tiếp và nộp bài để máy chấm.</p>
-    <div class="row" style="margin-top:10px"><button type="button" class="btn" data-go="de-cuong-1">Đề cương 1 · Unit 1–3</button><button type="button" class="btn" data-go="de-cuong-2">Đề cương 2 · 2026–2027</button></div>
+    <div class="row" style="margin-top:10px"><button type="button" class="btn" data-go="de-cuong-1">Bài làm đề cương 1 · Unit 1–3</button><button type="button" class="btn" data-go="de-cuong-2">Bài làm đề cương 2 · 2026–2027</button></div>
   </div>
   <div class="card">
     <h3>Cấu trúc đề kiểm tra</h3>
@@ -1165,8 +1165,8 @@ let best=sget('best',{});
 const SECBY={};
 const SETS={
  'lam-bai':{ex:EX,el:'#tab-lam-bai',title:'Làm bài tập',desc:'Toàn bộ bài trong đề cương, giữ nguyên nội dung. Nộp bài là máy chấm ngay, kèm đáp án và giải thích.',sk:'sec',def:'mcq'},
- 'de-cuong-1':{ex:DC1,el:'#tab-de-cuong-1',title:'Đề cương 1 · Unit 1–3',desc:'Đề cương giữa học kì 1, Tiếng Anh 6 (Unit 1 – Unit 3). Giữ nguyên nội dung file đề cương, nộp bài là máy chấm ngay.',sk:'sec1',def:DC1[0].id},
- 'de-cuong-2':{ex:DC2,el:'#tab-de-cuong-2',title:'Đề cương 2 · Năm học 2026–2027',desc:'Đề cương ôn tập kiểm tra giữa HK1, môn Tiếng Anh 6, năm học 2026–2027. Giữ nguyên nội dung file đề cương, nộp bài là máy chấm ngay.',sk:'sec2',def:DC2[0].id}
+ 'de-cuong-1':{ex:DC1,el:'#tab-de-cuong-1',title:'Bài làm đề cương 1 · Unit 1–3',desc:'Đề cương giữa học kì 1, Tiếng Anh 6 (Unit 1 – Unit 3). Giữ nguyên nội dung file đề cương, nộp bài là máy chấm ngay.',sk:'sec1',def:DC1[0].id},
+ 'de-cuong-2':{ex:DC2,el:'#tab-de-cuong-2',title:'Bài làm đề cương 2 · Năm học 2026–2027',desc:'Đề cương ôn tập kiểm tra giữa HK1, môn Tiếng Anh 6, năm học 2026–2027. Giữ nguyên nội dung file đề cương, nộp bài là máy chấm ngay.',sk:'sec2',def:DC2[0].id}
 };
 const SETOF={};
 Object.keys(SETS).forEach(k=>{const S=SETS[k];S.cur=sget(S.sk,S.def);if(!S.ex.some(x=>x.id===S.cur))S.cur=S.def;S.ex.forEach(x=>{SECBY[x.id]=x;SETOF[x.id]=k})});
