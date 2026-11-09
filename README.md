@@ -1,6 +1,6 @@
-# Ôn giữa kỳ Tiếng Anh 6
+# Hướng dẫn học Tiếng Anh lớp 6
 
-Trang web ôn tập giữa kỳ môn Tiếng Anh 6 (Global Success, Unit 1–3), gồm: Từ vựng, Ngữ pháp, Làm bài, Đề cương 1, 2, 3 và 4.
+Trang web học Tiếng Anh 6 (Global Success, Unit 1–6): Từ vựng có nút loa giọng Anh Mỹ, Ngữ pháp có video học thêm, Bài tập chấm tự động (Đề cương 1–4, Đề 05, Bài tập Unit 4, 5, 6).
 
 ## Cách đưa lên GitHub Pages
 1. Tạo repository mới trên GitHub (ví dụ: `on-giua-ky-tieng-anh-6`), chọn Public.
