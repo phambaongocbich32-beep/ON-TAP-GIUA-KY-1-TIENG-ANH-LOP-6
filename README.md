@@ -1,18 +1,27 @@
-# Hướng dẫn học Tiếng Anh lớp 6
+# Ôn Tiếng Anh 8 giữa học kì 1 (Global Success, Unit 1-3)
 
-Trang web học Tiếng Anh 6 (Global Success, Unit 1–6): Từ vựng có nút loa giọng Anh Mỹ, Ngữ pháp có video học thêm, Bài tập chấm tự động (Đề cương 1–4, Đề 05, Bài tập Unit 4, 5, 6).
+Trang web ôn tập: từ vựng có loa, phát âm, 7 bài ngữ pháp, 6 bộ đề luyện tập tự chấm và đồng hồ thi thử 60 phút.
+- Đề cương 1: đề cương ôn tập và Practice test (14 phần)
+- Đề cương 2: Revision (48 câu và 2 đoạn văn)
+- Đề cương 3: Đề số 01 (40 câu, 10 điểm)
+- Đề giữa kì Code 1 và Code 2 (34 câu + đoạn văn, 10 điểm; bài nghe do trình duyệt đọc theo script của đề)
+- Từ vựng bổ sung từ sách bài tập BTTA 8 (Unit 1-3), bài phát âm đuôi -ed, /ɪ/ và /aɪ/, /ʊ/ và /uː/, ngữ pháp bài 8
 
-Có thêm các tab đề kiểm tra lớp 6, có file nghe và máy chấm:
-- **Giữa kì 6 · Tân Yên** (giữa HK1 2024–2025)
-- **Giữa kì 6 · mã 101** và **mã 102** (giữa HK1 2024–2025, THCS Ngô Sỹ Liên, Bắc Giang)
-- **KĐCL lần 2 · Hoàng An** (học kì II 2023–2024, ngoài phạm vi Unit 1–6)
+Toàn bộ trang (kể cả 3 băng nghe thật của các đề mới) nằm trong MỘT file `index.html` (~10 MB), không cần file nào khác.
 
-## Các file cần có trong repository
-- `index.html`, `.nojekyll`, `README.md`
-- 3 file nghe, để **cùng thư mục với index.html**, giữ đúng tên: `NGHE_GHK_1_ANH_6.mp3` (Tân Yên), `NGHE_GHK_ANH_6_NSL.mp3` (mã 101 và 102), `FILE_NGHE_HOANG_AN.mp3` (Hoàng An)
+## Đưa lên GitHub Pages
+1. Tạo repository mới, tải `index.html`, `README.md`, `.nojekyll` lên (để ở thư mục gốc).
+2. Vào Settings > Pages > Source: chọn branch `main`, thư mục `/ (root)`, bấm Save.
+3. Chờ 1-2 phút rồi mở https://TEN-TAI-KHOAN.github.io/TEN-REPO/ (nhấn Ctrl+F5 nếu còn thấy bản cũ).
 
-## Cách đưa lên GitHub Pages
-1. Tạo repository mới trên GitHub (ví dụ: `on-giua-ky-tieng-anh-6`), chọn Public.
-2. Vào repository bấm **Add file → Upload files**, kéo thả toàn bộ file ở trên rồi **Commit changes**. (GitHub cho tải mỗi file tối đa 25 MB; các file nghe đều nhỏ hơn mức này.)
-3. Vào **Settings → Pages**, mục *Build and deployment* chọn **Deploy from a branch**, Branch: `main`, thư mục `/ (root)` → **Save**.
-4. Chờ 1–2 phút, link sẽ có dạng: `https://TEN-TAI-KHOAN.github.io/on-giua-ky-tieng-anh-6/`
+Cần Internet để tải font chữ. Giọng đọc do trình duyệt (Chrome, Edge, Safari).
+- Đề cương Nguyễn Hồng Ánh: Review for Mid-term Test 1 (45 câu trắc nghiệm, đọc, viết; đáp án do web tự suy ra vì bản scan không có đáp án)
+
+## Đề mới thêm
+- Ngô Sĩ Liên mã 801 và 802 (băng nghe thật, 32 trắc nghiệm, tự luận)
+- Tân Yên (băng nghe thật, 40 câu)
+- Giảng Võ 2 (36 câu; câu nghe 37-40 chưa có băng và đáp án nên chưa đưa vào)
+- Ngô Gia Tự (40 câu)
+- Chi Lăng 2026 (băng nghe thật, điền từ, sắp xếp, viết lại câu)
+
+Đáp án đã đối chiếu: mã 801 câu 28 và mã 802 câu 32 trong bảng đáp án gốc sai (đáp án đúng là từ *village*); các câu có 2 đáp án hợp lí được chấm đúng cả hai. Đáp án phần nghe lấy theo hướng dẫn chấm.
